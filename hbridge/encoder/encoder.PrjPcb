@@ -18,7 +18,7 @@ AllowPortNetNames=0
 AllowSheetEntryNetNames=1
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
-DefaultConfiguration=Default - All Constraints
+DefaultConfiguration=Default Configuration
 UserID=0xFFFFFFFF
 DefaultPcbProtel=1
 DefaultPcbPcad=0
@@ -39,7 +39,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\..\TNE087\linefollower\libs\NSC Amplifier\NSC Amplifier.PcbLib
+DocumentPath=rpmsens.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -48,33 +48,21 @@ AnnotateScope=All
 AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
+ClassGenCCAutoEnabled=0
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VAYHGRQO
 
-[Document2]
-DocumentPath=..\..\TNE087\linefollower\libs\NSC Amplifier\NSC Amplifier.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LHPORKSO
-
-[SearchPath1]
-Path=H:\TNE087\linefollower\libs\NSC Amplifier\*.*
-IncludeSubFolders=1
+[Configuration1]
+Name=Default Configuration
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+CurrentRevision=
+Variant=[No Variations]
+OutputJobsCount=0
 
 [OutputGroup1]
 Name=Netlist Outputs
