@@ -10,8 +10,10 @@ import math
 aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
 parameters = aruco.DetectorParameters_create()
 
-ARUCO_TAG_HEIGHT = 1
-ARUCO_TAG_WIDTH = 1
+ARUCO_TAG_HEIGHT = 25
+ARUCO_TAG_WIDTH = 25
+
+# Focal length = (Pixels x Distance) / Size
 WEBCAM_FOCAL_LENGTH = 1
 RASPICAM_FOCAL_LENGTH = 1
 POTATO_FOCAL_LENGTH = 1
@@ -55,11 +57,12 @@ def detect_and_cal_tags(a_image, focal_length=WEBCAM_FOCAL_LENGTH):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Do stuff')
-    parser.add_argument('-c', '--camera', choices=['webcam', 'raspicam', 'potato'], default='webcam')
-    parser.add_argument('-y', '--height', type=int, default=480)
-    parser.add_argument('-x', '--width', type=int, default=720)
+    parser.add_argument('-c', '--camera', choices=['webcam', 'raspicam', 'potato'], default='webcam',
+                        help='Select camera interface, defaults to webcam')
+    parser.add_argument('-y', '--height', type=int, default=480, help="Capture height, defaults to 480px")
+    parser.add_argument('-x', '--width', type=int, default=720, help="Capture width, defaults to 720px")
     # parser.add_argument('-g', '--gui', type=bool, default=False)
-    parser.add_argument('-i', '--camid', type=int, default=0)
+    parser.add_argument('-i', '--camid', type=int, default=0, help="Webcam id, defaults to 0 for auto")
 
 
     args = parser.parse_args()
