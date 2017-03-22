@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=* NewDesignator=mux
+Change Net Name : Old Net Name=Net*_a New Net Name=Netmux_a
+Change Net Name : Old Net Name=Net*_b New Net Name=Netmux_b
+Change Net Name : Old Net Name=Net*_c New Net Name=Netmux_c
+Change Net Name : Old Net Name=Net*_COM New Net Name=Netmux_COM
+Change Net Name : Old Net Name=Net*_y0 New Net Name=Netmux_y0
+Change Net Name : Old Net Name=Net*_y1 New Net Name=Netmux_y1
+Change Net Name : Old Net Name=Net*_y2 New Net Name=Netmux_y2
+Change Net Name : Old Net Name=Net*_y3 New Net Name=Netmux_y3
+Change Net Name : Old Net Name=Net*_y4 New Net Name=Netmux_y4
+Change Net Name : Old Net Name=Net*_y5 New Net Name=Netmux_y5
+Change Net Name : Old Net Name=Net*_y6 New Net Name=Netmux_y6
+Change Net Name : Old Net Name=Net*_y7 New Net Name=Netmux_y7

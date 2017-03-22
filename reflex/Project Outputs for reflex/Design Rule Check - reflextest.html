@@ -1,0 +1,398 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD16\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2017-03-07</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">16:46:28</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///H:\Skola\kandidat\reflex\reflextest.PcbDoc" class="file"><acronym title="H:\Skola\kandidat\reflex\reflextest.PcbDoc">H:\Skola\kandidat\reflex\reflextest.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">18</td></tr>
+</table>
+</td>
+</table><a name="IDJZUJAM3VWN3WK00GK3CI3UEJCEONQ113XS0DHQHO5EEY5EFEEBXH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAMTU5GFQH0E1BXNPETFEHQXLYHZG5RRDDA0JE5BI2WBXGIG515ZJ">Room Sheet1 (Bounding Region = (7045mil, 1060mil, 7645mil, 1370mil) (InComponentClass('Sheet1'))</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDELPXFVF2MR42C5ECMWYPYKOESHONOTBEOTF1W3FIEG5MDYBNAPKC">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2MMFZBSJTQAII1VEGSGZA5YB2DWK223VNKGUITNQDXVYPTGTMWVC">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYWG2XZ3PY1MXCSTWWFG4NBPP3PT0CLLBTPRPN1OHDPPKGVHZI5VB">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4SF2EMBP13TQLUZQW1XUYSJIWMRLLQ255YBXTHLTSAIXISAWXTXK">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZZ5TJBHDCECBKQAMQLBK3LW1TB20R0S0TZQAHJEYLHAJFDGB3M1O">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWTYWEAV3JYFRIGV1MUCB4U10ELT0PHGRQNLRAGLO5O1CXBBXKWOM">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXIHZ5RL1QCEGNQAH4HSNNMKLYDP3QRN4XOA5NZO32SGXGX3F1PQP">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZVWLYLKMZRXTMQ5A0RF5NPPYQM10MSEBZ03QPMGQQZ3CDRZV2WS">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ5SJSY4DJU52NUHF0BNKQ1QN4GRIZSS0EGNGHZELNXAQ3YXVWDBC">Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWM0XTD1LPGJ0EZLVXKWKQRX4AHIHN35NBEHCI2OBZV14EREN2BCD">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRDNHK0JWZ013CYYLLWU2YAC2UNEQ4EF14IEAELEQ3EDKWUBK4DLN">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2MMIWHIWEAE3DQGOCE5TX2TVTHPXUUMOQRLKBMEWC0SSUJT3UBCJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID20F202N0YZLFJEESXAI4JO5AMCQIXEZXCYCGEUDJ452JNWMMT1IC">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">18</td>
+</tr>
+</table><br><a name="IDAMTU5GFQH0E1BXNPETFEHQXLYHZG5RRDDA0JE5BI2WBXGIG515ZJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Room Sheet1 (Bounding Region = (7045mil, 1060mil, 7645mil, 1370mil) (InComponentClass('Sheet1'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6715.213mil|Location2.X=7645mil|Location1.Y=1060mil|Location2.Y=2930.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6715.213mil|Location2.X=7645mil|Location1.Y=1060mil|Location2.Y=2930.984mil|Absolute=True">Room Definition: Between Component RFX?-ITR1201 (6738.898mil,2875.866mil) on Top Layer And Room Sheet1 (Bounding Region = (7045mil, 1060mil, 7645mil, 1370mil) (InComponentClass('Sheet1')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6049.032mil|Location2.X=7645mil|Location1.Y=1060mil|Location2.Y=2631.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6049.032mil|Location2.X=7645mil|Location1.Y=1060mil|Location2.Y=2631.732mil|Absolute=True">Room Definition: Between SOIC Component *-mux (6084.528mil,2615mil) on Top Layer And Room Sheet1 (Bounding Region = (7045mil, 1060mil, 7645mil, 1370mil) (InComponentClass('Sheet1')) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4SF2EMBP13TQLUZQW1XUYSJIWMRLLQ255YBXTHLTSAIXISAWXTXK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6930.123mil|Location2.X=6941.373mil|Location1.Y=2890.91mil|Location2.Y=2902.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6930.123mil|Location2.X=6941.373mil|Location1.Y=2890.91mil|Location2.Y=2902.16mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (5.906mil &lt; 10mil) Between Track (6935.748mil,2903.425mil)(6935.748mil,2911.299mil) on Top Overlay And Pad RFX?-2(6920mil,2875.866mil) on Top Layer [Top Overlay] to [Top Solder] clearance [5.906mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZZ5TJBHDCECBKQAMQLBK3LW1TB20R0S0TZQAHJEYLHAJFDGB3M1O"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2596.58mil|Location2.Y=2607.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2596.58mil|Location2.Y=2607.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y6(6084.528mil,2589.409mil) on Top Layer And Pad *-y4(6084.528mil,2615mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2570.989mil|Location2.Y=2582.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2570.989mil|Location2.Y=2582.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-COM(6084.528mil,2563.819mil) on Top Layer And Pad *-y6(6084.528mil,2589.409mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2545.398mil|Location2.Y=2556.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2545.398mil|Location2.Y=2556.648mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y7(6084.528mil,2538.228mil) on Top Layer And Pad *-COM(6084.528mil,2563.819mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2519.808mil|Location2.Y=2531.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2519.808mil|Location2.Y=2531.058mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y5(6084.528mil,2512.638mil) on Top Layer And Pad *-y7(6084.528mil,2538.228mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2494.217mil|Location2.Y=2505.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2494.217mil|Location2.Y=2505.467mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-inh(6084.528mil,2487.047mil) on Top Layer And Pad *-y5(6084.528mil,2512.638mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2468.627mil|Location2.Y=2479.877mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2468.627mil|Location2.Y=2479.877mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-nc(6084.528mil,2461.456mil) on Top Layer And Pad *-inh(6084.528mil,2487.047mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2443.036mil|Location2.Y=2454.286mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6054.296mil|Location2.X=6065.546mil|Location1.Y=2443.036mil|Location2.Y=2454.286mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-gnd(6084.528mil,2435.866mil) on Top Layer And Pad *-nc(6084.528mil,2461.456mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2596.58mil|Location2.Y=2607.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2596.58mil|Location2.Y=2607.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y2(6305mil,2589.409mil) on Top Layer And Pad *-vcc(6305mil,2615mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2570.989mil|Location2.Y=2582.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2570.989mil|Location2.Y=2582.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y1(6305mil,2563.819mil) on Top Layer And Pad *-y2(6305mil,2589.409mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2545.398mil|Location2.Y=2556.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2545.398mil|Location2.Y=2556.648mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y0(6305mil,2538.228mil) on Top Layer And Pad *-y1(6305mil,2563.819mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2519.808mil|Location2.Y=2531.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2519.808mil|Location2.Y=2531.058mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-y3(6305mil,2512.638mil) on Top Layer And Pad *-y0(6305mil,2538.228mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2494.217mil|Location2.Y=2505.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2494.217mil|Location2.Y=2505.467mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-a(6305mil,2487.047mil) on Top Layer And Pad *-y3(6305mil,2512.638mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2468.627mil|Location2.Y=2479.877mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2468.627mil|Location2.Y=2479.877mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-b(6305mil,2461.456mil) on Top Layer And Pad *-a(6305mil,2487.047mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2443.036mil|Location2.Y=2454.286mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6274.769mil|Location2.X=6286.019mil|Location1.Y=2443.036mil|Location2.Y=2454.286mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.811mil &lt; 10mil) Between Pad *-c(6305mil,2435.866mil) on Top Layer And Pad *-b(6305mil,2461.456mil) on Top Layer [Top Solder] Mask Sliver [3.811mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2MMIWHIWEAE3DQGOCE5TX2TVTHPXUUMOQRLKBMEWC0SSUJT3UBCJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6049.032mil|Location2.X=6762.583mil|Location1.Y=2604.11mil|Location2.Y=2826.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\Skola\kandidat\reflex\reflextest.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6049.032mil|Location2.X=6762.583mil|Location1.Y=2604.11mil|Location2.Y=2826.716mil|Absolute=True">Un-Routed Net Constraint: Net Net*_y4 Between Pad *-y4(6084.528mil,2615mil) on Top Layer And Pad RFX?-3(6738.898mil,2805mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=Netmux_a Pin=P1-2
+Removed Pin From Net: NetName=Netmux_c Pin=P1-3
+Removed Pin From Net: NetName=Netmux_COM Pin=P1-4
+Removed Pin From Net: NetName=Netmux_b Pin=P1-5
+Removed Pin From Net: NetName=GND Pin=P1-6
+Change Component Footprint: Designator=P1 Old Footprint=HDR2X5_CEN New Footprint=IDC6
+Change Component Comment : Designator=P1 Old Comment=Header 5X2A New Comment=IDC6
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=Netmux_a Pin=P1-3
+Added Pin To Net: NetName=Netmux_b Pin=P1-4
+Added Pin To Net: NetName=Netmux_c Pin=P1-5
+Added Pin To Net: NetName=Netmux_COM Pin=P1-6

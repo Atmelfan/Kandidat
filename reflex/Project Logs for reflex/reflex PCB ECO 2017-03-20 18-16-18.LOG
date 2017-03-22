@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=Netmux_COM Pin=P1-1
+Removed Pin From Net: NetName=VCC Pin=P1-4
+Removed Pin From Net: NetName=GND Pin=P1-5
+Removed Pin From Net: NetName=Netmux_c Pin=P1-6
+Removed Pin From Net: NetName=Netmux_b Pin=P1-7
+Removed Pin From Net: NetName=Netmux_a Pin=P1-8
+Added Pin To Net: NetName=VCC Pin=P1-1
+Added Pin To Net: NetName=Netmux_a Pin=P1-2
+Added Pin To Net: NetName=Netmux_c Pin=P1-3
+Added Pin To Net: NetName=Netmux_COM Pin=P1-4
+Added Pin To Net: NetName=Netmux_b Pin=P1-5
+Added Pin To Net: NetName=GND Pin=P1-6
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 5X2A
