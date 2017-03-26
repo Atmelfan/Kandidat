@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetJ1_3 Pin=J-5
+Removed Pin From Net: NetName=NetJ1_5 Pin=J-7
+Added Pin To Net: NetName=NetJ1_5 Pin=J-5
+Added Pin To Net: NetName=NetJ1_3 Pin=J-7
+Added Room: Name=displaykort
