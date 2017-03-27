@@ -1,0 +1,29 @@
+Protel Design System Design Rule Check
+PCB File : D:\kandidat\Kandidat\hbridge\encoder\encoder.PcbDoc
+Date     : 2017-03-27
+Time     : 14:00:36
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=5000mil) (Preferred=20mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=9.842mil) (Max=787.402mil) (Preferred=29.528mil) (InNet('GND') or InNet('VCC'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=15.748mil) (Max=196.85mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:00
