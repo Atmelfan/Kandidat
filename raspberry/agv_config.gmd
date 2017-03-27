@@ -1,0 +1,5 @@
+picamera:
+    resolution 1024 576
+    sensor_mode 0
+    framerate 24
+end
