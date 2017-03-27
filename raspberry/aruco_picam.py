@@ -4,6 +4,7 @@ import numpy as np
 import cv2
 import cv2.aruco as aruco
 import time
+import multiprocessing as mp
 import math
 
 
@@ -49,6 +50,7 @@ def detect_and_cal_tags(a_image, focal_length=WEBCAM_FOCAL_LENGTH):
             d = get_distance(h, focal_length)
             a = 0 #math.acos(w / ARUCO_TAG_WIDTH)
             tags.append((xid, xx, xy, d, a))
+            print(tags)
             # tags.append({'id': xid, 'x': xx, 'y': xy, 'distance': d, 'angle': a})
             # cv2.circle(a_image, (int(corners[x][0][0][0]), int(corners[x][0][0][1])), 2, (1, 0, 0), 2)
             # cv2.circle(a_image, (int(point[0]), int(point[1])), 2, (1, 0, 0), 2)
@@ -63,6 +65,8 @@ if __name__ == '__main__':
     parser.add_argument('-x', '--width', type=int, default=720, help="Capture width, defaults to 720px")
     # parser.add_argument('-g', '--gui', type=bool, default=False)
     parser.add_argument('-i', '--camid', type=int, default=0, help="Webcam id, defaults to 0 for auto")
+    parser.add_argument('-r', '--resize', type=float, default=0.5, help="Opencv resize factor")
+
 
 
     args = parser.parse_args()
@@ -73,17 +77,54 @@ if __name__ == '__main__':
         exit(-1)
     elif args.camera == "raspicam":
         import picamera
+        from picamera.array import PiRGBArray
 
-        with picamera.PiCamera() as camera:
-            camera.resolution = (args.width, args.height)
-            camera.framerate = 24
-            time.sleep(2)
-            image = np.empty((args.height * args.width * 3,), dtype=np.uint8)
-            while True:
-                camera.capture(image, 'bgr')
-                cvimage = image.reshape((args.height, args.width, 3))
-                aruco_tags = detect_and_cal_tags(cvimage, RASPICAM_FOCAL_LENGTH)
-                print(aruco_tags)
+        with picamera.PiCamera(sensor_mode=4, resolution=(args.width, args.height), framerate=60) as camera:
+            print("Actual resolution: %s@mode=%d, framerate=%d" % (str(camera.resolution), camera.sensor_mode, camera.framerate))
+
+            time.sleep(0.5)
+            rawCapture = PiRGBArray(camera)
+            rawCapture.truncate(0)
+            camera.start_preview()
+            t = time.time()
+            a = False
+            n = 0
+            fc = 1
+            tot = 0
+            pool = mp.Pool(processes=4)
+            process = []
+            try:
+                for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+                    cvimage = frame.array
+                    cvimaget = cv2.resize(cvimage, None, fx=args.resize, fy=args.resize)
+                    # cvimaget = cv2.cvtColor(cvimaget, cv2.COLOR_BGR2GRAY) # no performance gain
+
+                    f = pool.apply_async(detect_and_cal_tags, (cvimaget, RASPICAM_FOCAL_LENGTH))
+
+                    t1 = time.time()
+                    tot = tot + (t1 - t)
+                    if not a:
+                        cv2.imwrite('t.jpg', cvimage)
+                        cv2.imwrite('tt.jpg', cvimaget)
+
+                        a = True
+                    print("dt=%s, at = %f" % (t1 - t, tot/fc))
+                    t = t1
+
+                    rawCapture.truncate(0)
+                    if len(process) < 4:
+                        process.append(f)
+                    else:
+                        print(process[n].get(timeout=1))
+                        process[n] = f
+                    n = (n + 1) % 4
+                    fc += 1
+
+            except KeyboardInterrupt:
+                pass
+            finally:
+                pool.close()
+                camera.stop_preview()
 
     else:
         cap = cv2.VideoCapture(args.camid)
