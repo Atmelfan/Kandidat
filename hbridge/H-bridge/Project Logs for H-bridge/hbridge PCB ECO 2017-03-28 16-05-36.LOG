@@ -1,0 +1,82 @@
+Removed Pin From Net: NetName=GND Pin=Q5_H1-1
+Removed Pin From Net: NetName=H1-TEMP Pin=Q5_H1-2
+Removed Pin From Net: NetName=GND Pin=Q5_H2-1
+Removed Pin From Net: NetName=H2-TEMP Pin=Q5_H2-2
+Change Component DesignItemId : Designator=R7_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R7_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R8_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R8_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R10_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R10_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R11_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R11_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R12_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R12_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R14_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R14_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R16_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R16_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R17_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=R17_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=Rs1_H1 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component DesignItemId : Designator=Rs1_H2 Old DesignItemId=Res2 New DesignItemId=RES
+Change Component Footprint: Designator=R7_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R7_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R8_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R8_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R10_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R10_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R11_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R11_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R12_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R12_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R14_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R14_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R16_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R16_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R17_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=R17_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=Rs1_H1 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=Rs1_H2 Old Footprint=AXIAL-0.4 New Footprint=RESC1608X06M
+Change Component Footprint: Designator=Q5_H1 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Footprint: Designator=Q5_H2 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Comment : Designator=R7_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R7_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R8_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R8_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R10_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R10_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R11_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R11_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R12_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R12_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R14_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R14_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R16_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R16_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=R17_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=R17_H2 Old Comment= New Comment=RES
+Change Component Comment : Designator=Rs1_H1 Old Comment= New Comment=RES
+Change Component Comment : Designator=Rs1_H2 Old Comment= New Comment=RES
+Change Component Library : Designator=R7_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R7_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R8_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R8_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R10_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R10_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R11_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R11_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R12_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R12_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R14_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R14_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R16_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R16_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R17_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=R17_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=Rs1_H1 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Change Component Library : Designator=Rs1_H2 Old Library=Miscellaneous Devices.IntLib New Library=std.SchLib
+Added Pin To Net: NetName=H1-TEMP Pin=Q5_H1-1
+Added Pin To Net: NetName=GND Pin=Q5_H1-2
+Added Pin To Net: NetName=H2-TEMP Pin=Q5_H2-1
+Added Pin To Net: NetName=GND Pin=Q5_H2-2
