@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=F1 Old Footprint=RESC1608X06M New Footprint=RESC3216X07M
+Change Component Comment : Designator=C1 Old Comment=100u New Comment=330u
+Change Component Comment : Designator=C12 Old Comment=100u New Comment=330u
+Change Component Comment : Designator=C11 Old Comment=100u New Comment=680u
+Added Member To Class: ClassName=Main Member=Component C16 CAP
+Added Room: Name=Display
+Added Room: Name=Main

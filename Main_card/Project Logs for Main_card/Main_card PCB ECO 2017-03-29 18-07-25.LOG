@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=NetJ1_2 New Net Name=D_N
+Change Net Name : Old Net Name=NetJ1_3 New Net Name=D_P
+Added Member To Class: ClassName=Main Member=Component C10 CAP
+Added Room: Name=Display
+Added Room: Name=Main
