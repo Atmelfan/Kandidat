@@ -1,0 +1,6 @@
+Change Net Name : Old Net Name=NetC13_H1_1 New Net Name=MA_H1
+Change Net Name : Old Net Name=NetC13_H2_1 New Net Name=MA_H2
+Change Net Name : Old Net Name=NetC14_H1_1 New Net Name=MB_H1
+Change Net Name : Old Net Name=NetC14_H2_1 New Net Name=MB_H2
+Added Member To Class: ClassName=H2 Member=Component Q4_H2 (Q4) PSMN014-10YS
+Added Member To Class: ClassName=H2 Member=Component Rs1_H2 (Rs1) RES
