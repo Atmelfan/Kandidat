@@ -1,9 +1,24 @@
-Output: Bill of Materials
-Type  : BOM
+Output: ODB++ Files
+Type  : ODB
 From  : Variant [[No Variations]] of Project [Main_card.PrjPcb]
+   Generated File[matrix]
+   Generated File[profile]
+   Generated File[stephdr]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[tools]
+   Generated File[features]
+   Generated File[features]
+   Generated File[components]
+   Generated File[data]
+   Generated File[netlist]
+   Generated File[Main_card.REP]
 
 
-Files Generated   : 0
+Files Generated   : 15
 Documents Printed : 0
 
-Finished Output Generation At 16:13:48 On 2017-03-24
+Finished Output Generation At 16:39:51 On 2017-03-30

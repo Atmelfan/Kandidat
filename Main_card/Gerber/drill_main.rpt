@@ -1,0 +1,17 @@
+CAMtasticDXP Drill Report
+Serial Number:0000-00-00000
+Drill File: H:\Skola\kandidat\git\Main_card\Gerber\drill_main.drl
+Format: 3.3
+Units: Metric (mm.)
+Step & Repeat Codes Used: NO
+
+
+TOOL		SIZE		COUNT
+====		======		=====
+
+ 1 		0.4000		8
+ 2 		0.7112		85
+ 3 		0.9000		97
+ 4 		1.5000		2
+ 5 		2.0000		2
+ 6 		3.4000		10
