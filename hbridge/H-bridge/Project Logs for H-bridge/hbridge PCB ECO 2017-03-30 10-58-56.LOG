@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=H1-RL Pin=U1-10
+Removed Pin From Net: NetName=H1-RH Pin=U1-11
+Removed Pin From Net: NetName=H1-LL Pin=U1-12
+Removed Pin From Net: NetName=H1-LH Pin=U1-13
+Removed Pin From Net: NetName=H2-LL Pin=U1-14
+Removed Pin From Net: NetName=H2-LH Pin=U1-15
+Removed Pin From Net: NetName=H2-RL Pin=U1-16
+Removed Pin From Net: NetName=H2-RH Pin=U1-17
+Added Pin To Net: NetName=H2-RL Pin=U1-10
+Added Pin To Net: NetName=H2-RH Pin=U1-11
+Added Pin To Net: NetName=H2-LL Pin=U1-12
+Added Pin To Net: NetName=H2-LH Pin=U1-13
+Added Pin To Net: NetName=H1-LL Pin=U1-14
+Added Pin To Net: NetName=H1-LH Pin=U1-15
+Added Pin To Net: NetName=H1-RL Pin=U1-16
+Added Pin To Net: NetName=H1-RH Pin=U1-17

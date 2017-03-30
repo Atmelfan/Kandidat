@@ -1,3 +1,5 @@
+Source PCB Design encoderx4.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
 Output: ODB++ Files
 Type  : ODB
 From  : Variant [[No Variations]] of Project [encoder.PrjPcb]
@@ -12,15 +14,29 @@ From  : Variant [[No Variations]] of Project [encoder.PrjPcb]
    Generated File[tools]
    Generated File[features]
    Generated File[features]
+   Generated File[tools]
+   Generated File[netlist]
+   Generated File[profile]
+   Generated File[stephdr]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[tools]
+   Generated File[features]
+   Generated File[features]
+   Generated File[components]
+   Generated File[features]
    Generated File[components]
    Generated File[features]
    Generated File[tools]
    Generated File[data]
    Generated File[netlist]
-   Generated File[encoder.REP]
+   Generated File[encoderx4.REP]
 
 
-Files Generated   : 17
+Files Generated   : 31
 Documents Printed : 0
 
-Finished Output Generation At 16:41:07 On 2017-03-27
+Finished Output Generation At 18:07:24 On 2017-03-30

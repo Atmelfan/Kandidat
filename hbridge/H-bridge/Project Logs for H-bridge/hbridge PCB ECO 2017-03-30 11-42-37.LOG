@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GPIO_0 Pin=U1-6
+Removed Pin From Net: NetName=GPIO_1 Pin=U1-7
+Added Pin To Net: NetName=GPIO_0 Pin=U1-28
+Added Pin To Net: NetName=GPIO_1 Pin=U1-29
+Added Member To Class: ClassName=controller Member=Component U1 
