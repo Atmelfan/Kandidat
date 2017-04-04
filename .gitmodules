@@ -1,0 +1,9 @@
+[submodule "opencv/opencv"]
+	path = opencv/opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "opencv/opencv_contrib"]
+	path = opencv/opencv_contrib
+	url = https://github.com/opencv/opencv_contrib.git
+[submodule "raspberry_gcc/tools"]
+	path = raspberry_gcc/tools
+	url = git://github.com/raspberrypi/tools.git
