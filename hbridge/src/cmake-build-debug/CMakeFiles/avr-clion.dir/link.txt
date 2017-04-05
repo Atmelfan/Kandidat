@@ -1,0 +1,1 @@
+avr-gcc  -Os -mmcu=atxmega32a4u -DF_CPU=32000000UL -std=gnu99 -Wl,--gc-sections -ffunction-sections -g   CMakeFiles/avr-clion.dir/main.c.o  -o ../bin/avr-clion  

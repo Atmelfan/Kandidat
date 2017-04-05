@@ -1,0 +1,3 @@
+/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir
