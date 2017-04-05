@@ -1,0 +1,120 @@
+Removed Pin From Net: NetName=NetC11_2 Pin=R6-1
+Change Component Footprint: Designator=Display Old Footprint=PCBCOMPONENT_1 New Footprint=Display
+Added Component: Designator=J6(IDC6)
+Added Component: Designator=U1(64A_N)
+Added Pin To Net: NetName=3V3 Pin=C6-2
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-4
+Added Pin To Net: NetName=3V3 Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J6-6
+Added Pin To Net: NetName=NetC11_2 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=U1-14
+Added Pin To Net: NetName=3V3 Pin=U1-15
+Added Pin To Net: NetName=CS Pin=U1-20
+Added Pin To Net: NetName=MOSI Pin=U1-21
+Added Pin To Net: NetName=SCK Pin=U1-23
+Added Pin To Net: NetName=GND Pin=U1-24
+Added Pin To Net: NetName=3V3 Pin=U1-25
+Added Pin To Net: NetName=D_N Pin=U1-32
+Added Pin To Net: NetName=D_P Pin=U1-33
+Added Pin To Net: NetName=GND Pin=U1-34
+Added Pin To Net: NetName=3V3 Pin=U1-35
+Added Pin To Net: NetName=GND Pin=U1-44
+Added Pin To Net: NetName=3V3 Pin=U1-45
+Added Pin To Net: NetName=NetReflex_3 Pin=U1-51
+Added Pin To Net: NetName=GND Pin=U1-52
+Added Pin To Net: NetName=3V3 Pin=U1-53
+Added Pin To Net: NetName=NetReflex_4 Pin=U1-54
+Added Pin To Net: NetName=NetReflex_5 Pin=U1-55
+Added Pin To Net: NetName=GND Pin=U1-60
+Added Pin To Net: NetName=3V3 Pin=U1-61
+Added Pin To Net: NetName=NetR14_1 Pin=U1-62
+Change Net Name : Old Net Name=NetJ1_5 New Net Name=NetJ1_4
+Added Pin To Net: NetName=B_RX Pin=Bootloader-4
+Added Pin To Net: NetName=B_RX Pin=U1-48
+Added Net: Name=B_RX
+Added Pin To Net: NetName=B_TX Pin=Bootloader-3
+Added Pin To Net: NetName=B_TX Pin=U1-49
+Added Net: Name=B_TX
+Added Pin To Net: NetName=M1_PC0 Pin=Motor1-5
+Added Pin To Net: NetName=M1_PC0 Pin=U1-27
+Added Net: Name=M1_PC0
+Added Pin To Net: NetName=M1_PC1 Pin=Motor1-6
+Added Pin To Net: NetName=M1_PC1 Pin=U1-26
+Added Net: Name=M1_PC1
+Added Pin To Net: NetName=M1_RX0 Pin=Motor1-4
+Added Pin To Net: NetName=M1_RX0 Pin=U1-28
+Added Net: Name=M1_RX0
+Added Pin To Net: NetName=M1_TX0 Pin=Motor1-3
+Added Pin To Net: NetName=M1_TX0 Pin=U1-29
+Added Net: Name=M1_TX0
+Added Pin To Net: NetName=M2_PE0 Pin=Motor2-5
+Added Pin To Net: NetName=M2_PE0 Pin=U1-36
+Added Net: Name=M2_PE0
+Added Pin To Net: NetName=M2_PE1 Pin=Motor2-6
+Added Pin To Net: NetName=M2_PE1 Pin=U1-37
+Added Net: Name=M2_PE1
+Added Pin To Net: NetName=M2_RX1 Pin=Motor2-4
+Added Pin To Net: NetName=M2_RX1 Pin=U1-38
+Added Net: Name=M2_RX1
+Added Pin To Net: NetName=M2_TX1 Pin=Motor2-3
+Added Pin To Net: NetName=M2_TX1 Pin=U1-39
+Added Net: Name=M2_TX1
+Added Pin To Net: NetName=PA1 Pin=R10-1
+Added Pin To Net: NetName=PA1 Pin=R13-2
+Added Pin To Net: NetName=PA1 Pin=U1-63
+Added Net: Name=PA1
+Added Pin To Net: NetName=PA2 Pin=R9-1
+Added Pin To Net: NetName=PA2 Pin=R12-2
+Added Pin To Net: NetName=PA2 Pin=U1-64
+Added Net: Name=PA2
+Added Pin To Net: NetName=PA3 Pin=R8-1
+Added Pin To Net: NetName=PA3 Pin=R11-2
+Added Pin To Net: NetName=PA3 Pin=U1-1
+Added Net: Name=PA3
+Added Pin To Net: NetName=PA5_REG Pin=R6-1
+Added Pin To Net: NetName=PA5_REG Pin=U1-3
+Added Net: Name=PA5_REG
+Added Pin To Net: NetName=PA6_REFL Pin=Reflex-6
+Added Pin To Net: NetName=PA6_REFL Pin=U1-4
+Added Net: Name=PA6_REFL
+Added Pin To Net: NetName=PB0 Pin=R20-1
+Added Pin To Net: NetName=PB0 Pin=SW3-1
+Added Pin To Net: NetName=PB0 Pin=SW3-1
+Added Pin To Net: NetName=PB0 Pin=U1-6
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=R19-1
+Added Pin To Net: NetName=PB1 Pin=SW2-1
+Added Pin To Net: NetName=PB1 Pin=SW2-1
+Added Pin To Net: NetName=PB1 Pin=U1-7
+Added Net: Name=PB1
+Added Pin To Net: NetName=PB2 Pin=R18-1
+Added Pin To Net: NetName=PB2 Pin=SW4-1
+Added Pin To Net: NetName=PB2 Pin=SW4-1
+Added Pin To Net: NetName=PB2 Pin=U1-8
+Added Net: Name=PB2
+Added Pin To Net: NetName=PDI Pin=J6-1
+Added Pin To Net: NetName=PDI Pin=U1-56
+Added Net: Name=PDI
+Added Pin To Net: NetName=RASP_RX Pin=Raspberry Pi-10
+Added Pin To Net: NetName=RASP_RX Pin=U1-42
+Added Net: Name=RASP_RX
+Added Pin To Net: NetName=RASP_TX Pin=Raspberry Pi-8
+Added Pin To Net: NetName=RASP_TX Pin=U1-43
+Added Net: Name=RASP_TX
+Added Pin To Net: NetName=RESET Pin=C2-2
+Added Pin To Net: NetName=RESET Pin=J6-5
+Added Pin To Net: NetName=RESET Pin=R4-1
+Added Pin To Net: NetName=RESET Pin=SW1-1
+Added Pin To Net: NetName=RESET Pin=SW1-1
+Added Pin To Net: NetName=RESET Pin=U1-57
+Added Net: Name=RESET
+Added Pin To Net: NetName=SCL Pin=Display-7
+Added Pin To Net: NetName=SCL Pin=U1-17
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=Display-6
+Added Pin To Net: NetName=SDA Pin=U1-16
+Added Net: Name=SDA
+Added Member To Class: ClassName=Main Member=Component J6 PDI
+Added Member To Class: ClassName=Main Member=Component U1 ATxmega128A3U-AU
+Added Room: Name=Display
+Added Room: Name=Main
