@@ -1,0 +1,45 @@
+Removed Pin From Net: NetName=Netmux_a Pin=mux-a
+Removed Pin From Net: NetName=Netmux_b Pin=mux-b
+Removed Pin From Net: NetName=Netmux_c Pin=mux-c
+Removed Pin From Net: NetName=Netmux_COM Pin=mux-COM
+Removed Pin From Net: NetName=GND Pin=mux-gnd
+Removed Pin From Net: NetName=GND Pin=mux-inh
+Removed Pin From Net: NetName=VCC Pin=mux-vcc
+Removed Pin From Net: NetName=Netmux_y0 Pin=mux-y0
+Removed Pin From Net: NetName=Netmux_y1 Pin=mux-y1
+Removed Pin From Net: NetName=Netmux_y2 Pin=mux-y2
+Removed Pin From Net: NetName=Netmux_y3 Pin=mux-y3
+Removed Pin From Net: NetName=Netmux_y4 Pin=mux-y4
+Removed Pin From Net: NetName=Netmux_y5 Pin=mux-y5
+Removed Pin From Net: NetName=Netmux_y6 Pin=mux-y6
+Removed Pin From Net: NetName=Netmux_y7 Pin=mux-y7
+Change Component Footprint: Designator=mux Old Footprint=4051 New Footprint=SO-16_N
+Added Pin To Net: NetName=Netmux_y4 Pin=mux-1
+Added Pin To Net: NetName=Netmux_y6 Pin=mux-2
+Added Pin To Net: NetName=Netmux_COM Pin=mux-3
+Added Pin To Net: NetName=Netmux_y7 Pin=mux-4
+Added Pin To Net: NetName=Netmux_y5 Pin=mux-5
+Added Pin To Net: NetName=GND Pin=mux-6
+Added Pin To Net: NetName=GND Pin=mux-8
+Added Pin To Net: NetName=Netmux_c Pin=mux-9
+Added Pin To Net: NetName=Netmux_b Pin=mux-10
+Added Pin To Net: NetName=Netmux_a Pin=mux-11
+Added Pin To Net: NetName=Netmux_y3 Pin=mux-12
+Added Pin To Net: NetName=Netmux_y0 Pin=mux-13
+Added Pin To Net: NetName=Netmux_y1 Pin=mux-14
+Added Pin To Net: NetName=Netmux_y2 Pin=mux-15
+Added Pin To Net: NetName=VCC Pin=mux-16
+Change Net Name : Old Net Name=Netmux_a New Net Name=Netmux_11
+Change Net Name : Old Net Name=Netmux_b New Net Name=Netmux_10
+Change Net Name : Old Net Name=Netmux_c New Net Name=Netmux_9
+Change Net Name : Old Net Name=Netmux_COM New Net Name=Netmux_3
+Change Net Name : Old Net Name=Netmux_y0 New Net Name=Netmux_13
+Change Net Name : Old Net Name=Netmux_y1 New Net Name=Netmux_14
+Change Net Name : Old Net Name=Netmux_y2 New Net Name=Netmux_15
+Change Net Name : Old Net Name=Netmux_y3 New Net Name=Netmux_12
+Change Net Name : Old Net Name=Netmux_y4 New Net Name=Netmux_1
+Change Net Name : Old Net Name=Netmux_y5 New Net Name=Netmux_5
+Change Net Name : Old Net Name=Netmux_y6 New Net Name=Netmux_2
+Change Net Name : Old Net Name=Netmux_y7 New Net Name=Netmux_4
+Added Member To Class: ClassName=Sheet1 Member=Component mux
+Added Room: Name=Sheet1
