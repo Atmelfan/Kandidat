@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/avr-clion.dir/VirtualSerial.c.o"
+  "CMakeFiles/avr-clion.dir/Descriptors.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o"
+  "CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o"
+  "../bin/avr-clion.pdb"
+  "../bin/avr-clion"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/avr-clion.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

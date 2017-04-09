@@ -1,47 +1,53 @@
 Protel Design System Design Rule Check
-PCB File : H:\Skola\kandidat\git\reflex\reflex.PcbDoc
-Date     : 2017-03-30
-Time     : 17:06:19
+PCB File : H:\TNE095\reflex\reflex.PcbDoc
+Date     : 2017-04-06
+Time     : 15:23:47
 
-Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+WARNING: Your board contains 2 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
+   Polygon named: top Layer-gnd In net GND On Top Layer
+   Polygon named: Bottom Layer-gnd In net GND On Bottom Layer
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Processing Rule : Silkscreen Over Component Pads (Clearance=0.025mm) (IsPad),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=1mil) (IsPad),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.025mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2539.975mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=1mil) (Max=99999mil) (All)
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.508mm) (Preferred=0.254mm) (All)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=10mil) (Max=20mil) (Preferred=10mil) (All)
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
+   Violation between Un-Routed Net Constraint: Net GND Between Pad RFX5-1 (34.29,64.107mm) And Pad mux-8 (34.671,64.402mm)
+   Violation between Un-Routed Net Constraint: Net GND Between Pad mux-8 (34.671,64.402mm) And Pad mux-6 (37.211,64.402mm)
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C?-1 (37.962,73.279mm) And Pad P1-2 (50.8,73.152mm)
+   Violation between Un-Routed Net Constraint: Net GND Between Pad RFX8-1 (34.268,43.533mm) And Via (35.56,23.876mm)
+   Violation between Un-Routed Net Constraint: Net GND Between Pad RFX1-4 (34.29,96.139mm) And Via (35.56,115.824mm)
+Rule Violations :5
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
-Violations Detected : 0
+Violations Detected : 5
 Time Elapsed        : 00:00:00

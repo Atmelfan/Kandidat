@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="goldsrc"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goldsrc">
+				<Option output="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/goldsrc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 goldsrc"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goldsrc/fast">
+				<Option output="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/goldsrc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 goldsrc/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Build/HID_EEPROM_Loader/HID_EEPROM_Loader.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/ArchitectureSpecific.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/Architectures.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/Attributes.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/BoardTypes.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/Common.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/CompilerSpecific.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Common/Endianness.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/ADAFRUITU4/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/ADAFRUITU4/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/ATAVRUSBRF01/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/ATAVRUSBRF01/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/ATAVRUSBRF01/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BENITO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BENITO/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BENITO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BIGMULTIO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BIGMULTIO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BLACKCAT/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BLACKCAT/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUI/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUI/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUMBLEB/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUMBLEB/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUMBLEB/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/BUMBLEB/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/CULV3/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/CULV3/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/CULV3/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/DUCE/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/DUCE/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/EVK527/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/EVK527/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/EVK527/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/EVK527/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/EVK527/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/JMDBU2/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/JMDBU2/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/JMDBU2/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/LEONARDO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/LEONARDO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MAXIMUS/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MAXIMUS/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICRO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICRO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROPENDOUS/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROPENDOUS/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROPENDOUS/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROSIN162/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROSIN162/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MICROSIN162/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MINIMUS/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MINIMUS/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MINIMUS/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MULTIO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/MULTIO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX162/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX162/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX162/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX32U4/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX32U4/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEX32U4/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXISPMK2/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXISPMK2/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXISPMK2/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXT32U4/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXT32U4/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/OLIMEXT32U4/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/RZUSBSTICK/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/RZUSBSTICK/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/SPARKFUN8U2/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/SPARKFUN8U2/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STANGE_ISP/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STANGE_ISP/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STANGE_ISP/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK525/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK525/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK525/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK525/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK525/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK526/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK526/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK526/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK526/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/STK526/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/TEENSY/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/TEENSY/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/TUL/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/TUL/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/TUL/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/U2S/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/U2S/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/U2S/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/UDIP/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/UDIP/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/UDIP/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/UNO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/UNO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USB2AX/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USB2AX/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USB2AX/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBFOO/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBFOO/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBFOO/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBKEY/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBKEY/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBKEY/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBKEY/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBKEY/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBTINYMKII/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBTINYMKII/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/USBTINYMKII/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/XPLAIN/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/XPLAIN/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/XPLAIN/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/XPLAINED_MINI/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/XPLAINED_MINI/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/YUN/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/AVR8/YUN/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Temperature.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/Temperature.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1100/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1100/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1100/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1100/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1101/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1101/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1101/Joystick.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1101/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1104/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1104/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/EVK1104/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/UC3A3_XPLAINED/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/UC3A3_XPLAINED/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/UC3/UC3A3_XPLAINED/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/A3BU_XPLAINED/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/A3BU_XPLAINED/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/A3BU_XPLAINED/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/A3BU_XPLAINED/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/B1_XPLAINED/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/B1_XPLAINED/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/B1_XPLAINED/Dataflash.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/B1_XPLAINED/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/C3_XPLAINED/Board.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/C3_XPLAINED/Buttons.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board/XMEGA/C3_XPLAINED/LEDs.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Misc/AT45DB321C.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Misc/AT45DB642D.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Misc/RingBuffer.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Misc/TerminalCodes.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/ADC.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/ADC_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/SPI_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/SerialSPI_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/Serial_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/Serial_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/TWI_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/AVR8/TWI_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/SPI.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/Serial.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/SerialSPI.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/TWI.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/SPI_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/SerialSPI_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/Serial_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/Serial_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/TWI_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Peripheral/XMEGA/TWI_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/AndroidAccessoryClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/AudioClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/CDCClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/AndroidAccessoryClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/AudioClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/CDCClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDReportData.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/MIDIClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/MassStorageClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/PrinterClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/RNDISClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/StillImageClassCommon.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/HIDClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/MIDIClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/MassStorageClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/PrinterClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/RNDISClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/StillImageClass.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/OTG_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_W.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/Template/Template_Pipe_RW.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Device.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Endpoint.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/EndpointStream.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Host.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/OTG.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Pipe.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/PipeStream.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/StdDescriptors.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/StdRequestType.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Device_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Device_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/EndpointStream_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/EndpointStream_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Endpoint_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Endpoint_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Host_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Host_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/PipeStream_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/PipeStream_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Pipe_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Pipe_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Template/Template_Endpoint_Control_R.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Template/Template_Endpoint_Control_W.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Template/Template_Endpoint_RW.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/Template/Template_Pipe_RW.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/USBController_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/USBController_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/USBInterrupt_UC3.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/UC3/USBInterrupt_UC3.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBController.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBInterrupt.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBMode.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Template/Template_Endpoint_Control_R.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Template/Template_Endpoint_Control_W.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Template/Template_Endpoint_RW.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/USB.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Platform/Platform.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Platform/UC3/ClockManagement.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Platform/UC3/InterruptManagement.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Platform/UC3/InterruptManagement.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Platform/XMEGA/ClockManagement.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Version.h">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/main.c.c">
+			<Option target="goldsrc"/>
+		</Unit>
+		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
