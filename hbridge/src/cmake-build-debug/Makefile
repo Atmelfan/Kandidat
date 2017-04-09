@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atmelfan/documents/Kandidat/hbridge/src
+CMAKE_SOURCE_DIR = /media/data/kandidat/Kandidat/hbridge/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug
+CMAKE_BINARY_DIR = /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-deb
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,14 +123,41 @@ avr-clion/fast:
 	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/build
 .PHONY : avr-clion/fast
 
-main.o: main.c.o
+gpa_scpi.obj: gpa_scpi.c.obj
 
-.PHONY : main.o
+.PHONY : gpa_scpi.obj
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.o
-.PHONY : main.c.o
+gpa_scpi.c.obj:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+.PHONY : gpa_scpi.c.obj
+
+gpa_scpi.i: gpa_scpi.c.i
+
+.PHONY : gpa_scpi.i
+
+# target to preprocess a source file
+gpa_scpi.c.i:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.i
+.PHONY : gpa_scpi.c.i
+
+gpa_scpi.s: gpa_scpi.c.s
+
+.PHONY : gpa_scpi.s
+
+# target to generate assembly for a file
+gpa_scpi.c.s:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.s
+.PHONY : gpa_scpi.c.s
+
+main.obj: main.c.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.c.obj:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.obj
+.PHONY : main.c.obj
 
 main.i: main.c.i
 
@@ -150,6 +177,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.s
 .PHONY : main.c.s
 
+motors.obj: motors.c.obj
+
+.PHONY : motors.obj
+
+# target to build an object file
+motors.c.obj:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.obj
+.PHONY : motors.c.obj
+
+motors.i: motors.c.i
+
+.PHONY : motors.i
+
+# target to preprocess a source file
+motors.c.i:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.i
+.PHONY : motors.c.i
+
+motors.s: motors.c.s
+
+.PHONY : motors.s
+
+# target to generate assembly for a file
+motors.c.s:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.s
+.PHONY : motors.c.s
+
+motors_scpi.obj: motors_scpi.c.obj
+
+.PHONY : motors_scpi.obj
+
+# target to build an object file
+motors_scpi.c.obj:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.obj
+.PHONY : motors_scpi.c.obj
+
+motors_scpi.i: motors_scpi.c.i
+
+.PHONY : motors_scpi.i
+
+# target to preprocess a source file
+motors_scpi.c.i:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.i
+.PHONY : motors_scpi.c.i
+
+motors_scpi.s: motors_scpi.c.s
+
+.PHONY : motors_scpi.s
+
+# target to generate assembly for a file
+motors_scpi.c.s:
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.s
+.PHONY : motors_scpi.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +240,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... avr-clion"
-	@echo "... main.o"
+	@echo "... gpa_scpi.obj"
+	@echo "... gpa_scpi.i"
+	@echo "... gpa_scpi.s"
+	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... motors.obj"
+	@echo "... motors.i"
+	@echo "... motors.s"
+	@echo "... motors_scpi.obj"
+	@echo "... motors_scpi.i"
+	@echo "... motors_scpi.s"
 .PHONY : help
 
 

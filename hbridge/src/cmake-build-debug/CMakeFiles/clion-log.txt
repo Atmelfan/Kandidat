@@ -1,4 +1,4 @@
-/home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/atmelfan/documents/Kandidat/hbridge/src
+/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/data/kandidat/Kandidat/hbridge/src
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug
+-- Build files have been written to: /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug

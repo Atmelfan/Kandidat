@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atmelfan/documents/Kandidat/hbridge/src
+CMAKE_SOURCE_DIR = /media/data/kandidat/Kandidat/hbridge/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug
+CMAKE_BINARY_DIR = /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/avr-clion.dir/depend.make
@@ -57,52 +57,133 @@ include CMakeFiles/avr-clion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/avr-clion.dir/flags.make
 
-CMakeFiles/avr-clion.dir/main.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/avr-clion.dir/main.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/main.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/src/main.c
+CMakeFiles/avr-clion.dir/main.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/avr-clion.dir/main.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/main.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/main.c
 
 CMakeFiles/avr-clion.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/main.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/src/main.c > CMakeFiles/avr-clion.dir/main.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/main.c > CMakeFiles/avr-clion.dir/main.c.i
 
 CMakeFiles/avr-clion.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/main.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/src/main.c -o CMakeFiles/avr-clion.dir/main.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/main.c -o CMakeFiles/avr-clion.dir/main.c.s
 
-CMakeFiles/avr-clion.dir/main.c.o.requires:
+CMakeFiles/avr-clion.dir/main.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/main.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/main.c.obj.requires
 
-CMakeFiles/avr-clion.dir/main.c.o.provides: CMakeFiles/avr-clion.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/main.c.o.provides
+CMakeFiles/avr-clion.dir/main.c.obj.provides: CMakeFiles/avr-clion.dir/main.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/main.c.obj.provides
 
-CMakeFiles/avr-clion.dir/main.c.o.provides.build: CMakeFiles/avr-clion.dir/main.c.o
+CMakeFiles/avr-clion.dir/main.c.obj.provides.build: CMakeFiles/avr-clion.dir/main.c.obj
+
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: ../gpa_scpi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/avr-clion.dir/gpa_scpi.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/gpa_scpi.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/gpa_scpi.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c > CMakeFiles/avr-clion.dir/gpa_scpi.c.i
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/gpa_scpi.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c -o CMakeFiles/avr-clion.dir/gpa_scpi.c.s
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides.build: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+
+
+CMakeFiles/avr-clion.dir/motors.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/motors.c.obj: ../motors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/avr-clion.dir/motors.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/motors.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/motors.c
+
+CMakeFiles/avr-clion.dir/motors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/motors.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/motors.c > CMakeFiles/avr-clion.dir/motors.c.i
+
+CMakeFiles/avr-clion.dir/motors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/motors.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/motors.c -o CMakeFiles/avr-clion.dir/motors.c.s
+
+CMakeFiles/avr-clion.dir/motors.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/motors.c.obj.requires
+
+CMakeFiles/avr-clion.dir/motors.c.obj.provides: CMakeFiles/avr-clion.dir/motors.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/motors.c.obj.provides
+
+CMakeFiles/avr-clion.dir/motors.c.obj.provides.build: CMakeFiles/avr-clion.dir/motors.c.obj
+
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../motors_scpi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/avr-clion.dir/motors_scpi.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/motors_scpi.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/motors_scpi.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c > CMakeFiles/avr-clion.dir/motors_scpi.c.i
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/motors_scpi.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c -o CMakeFiles/avr-clion.dir/motors_scpi.c.s
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides: CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides.build: CMakeFiles/avr-clion.dir/motors_scpi.c.obj
 
 
 # Object files for target avr-clion
 avr__clion_OBJECTS = \
-"CMakeFiles/avr-clion.dir/main.c.o"
+"CMakeFiles/avr-clion.dir/main.c.obj" \
+"CMakeFiles/avr-clion.dir/gpa_scpi.c.obj" \
+"CMakeFiles/avr-clion.dir/motors.c.obj" \
+"CMakeFiles/avr-clion.dir/motors_scpi.c.obj"
 
 # External object files for target avr-clion
 avr__clion_EXTERNAL_OBJECTS =
 
-../bin/avr-clion: CMakeFiles/avr-clion.dir/main.c.o
+../bin/avr-clion: CMakeFiles/avr-clion.dir/main.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/motors.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/motors_scpi.c.obj
 ../bin/avr-clion: CMakeFiles/avr-clion.dir/build.make
 ../bin/avr-clion: CMakeFiles/avr-clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/avr-clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ../bin/avr-clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/avr-clion.dir/link.txt --verbose=$(VERBOSE)
-	avr-objcopy -O ihex -R.eeprom /home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion /home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion.hex
-	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 /home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion /home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion.eep
-	avr-size /home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion --mcu=atxmega32a4u --format=avr
+	avr-objcopy -O ihex -R.eeprom /media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion /media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion.hex
+	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 /media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion /media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion.eep
+	avr-size /media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion --mcu=atxmega32a4u --format=avr
 
 # Rule to build all files generated by this target.
 CMakeFiles/avr-clion.dir/build: ../bin/avr-clion
 
 .PHONY : CMakeFiles/avr-clion.dir/build
 
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/main.c.o.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/main.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/motors.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
 
 .PHONY : CMakeFiles/avr-clion.dir/requires
 
@@ -111,6 +192,6 @@ CMakeFiles/avr-clion.dir/clean:
 .PHONY : CMakeFiles/avr-clion.dir/clean
 
 CMakeFiles/avr-clion.dir/depend:
-	cd /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atmelfan/documents/Kandidat/hbridge/src /home/atmelfan/documents/Kandidat/hbridge/src /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug /home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/data/kandidat/Kandidat/hbridge/src /media/data/kandidat/Kandidat/hbridge/src /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/avr-clion.dir/depend
 

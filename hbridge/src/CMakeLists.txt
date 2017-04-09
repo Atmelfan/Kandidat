@@ -8,7 +8,7 @@ SET(DEVICE "atxmega32a4u")
 SET(FREQ "32000000")
 
 #============================================================================================
-
+add_definitions(-DF_USB=48000000)
 
 SET(CMAKE_C_COMPILER avr-gcc)
 SET(CMAKE_CXX_COMPILER avr-g++)
@@ -23,7 +23,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 #============================================================================================
 
-SET(SOURCE_FILES main.c)
+SET(SOURCE_FILES main.c gpa_scpi.c motors.h motors.c motors_scpi.c motors_scpi.h)
 
 #============================================================================================
 

@@ -8,42 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="avr-clion">
-				<Option output="/home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/src/bin"/>
+				<Option output="/media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/src/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DF_USB=48000000"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -54,19 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="avr-clion/fast">
-				<Option output="/home/atmelfan/documents/Kandidat/hbridge/src/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/src/bin"/>
+				<Option output="/media/data/kandidat/Kandidat/hbridge/src/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/src/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DF_USB=48000000"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -77,17 +79,35 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/src/main.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/src/CMakeLists.txt">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/main.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

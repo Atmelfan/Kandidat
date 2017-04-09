@@ -4,7 +4,7 @@
 # compile C with avr-gcc
 C_FLAGS = -Os -mmcu=atxmega32a4u -DF_CPU=32000000UL -std=gnu99 -Wl,--gc-sections -ffunction-sections -g  
 
-C_DEFINES = 
+C_DEFINES = -DF_USB=48000000
 
 C_INCLUDES = 
 
