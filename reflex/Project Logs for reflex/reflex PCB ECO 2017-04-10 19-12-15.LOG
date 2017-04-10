@@ -1,0 +1,141 @@
+Added Component: Designator=C?(6-0805_N)
+Added Component: Designator=mux(SO-16_N)
+Added Component: Designator=p1(IDC6)
+Added Component: Designator=R1(6-0805_N)
+Added Component: Designator=R2(6-0805_N)
+Added Component: Designator=R3(6-0805_N)
+Added Component: Designator=R4(6-0805_N)
+Added Component: Designator=R5(6-0805_N)
+Added Component: Designator=R6(6-0805_N)
+Added Component: Designator=R7(6-0805_N)
+Added Component: Designator=R8(6-0805_N)
+Added Component: Designator=R9(6-0805_N)
+Added Component: Designator=R10(6-0805_N)
+Added Component: Designator=R11(6-0805_N)
+Added Component: Designator=R12(6-0805_N)
+Added Component: Designator=R13(6-0805_N)
+Added Component: Designator=R14(6-0805_N)
+Added Component: Designator=R15(6-0805_N)
+Added Component: Designator=R16(6-0805_N)
+Added Component: Designator=RFX1(LCC4 - duplicate4)
+Added Component: Designator=RFX2(LCC4 - duplicate4)
+Added Component: Designator=RFX3(LCC4 - duplicate4)
+Added Component: Designator=RFX4(LCC4 - duplicate4)
+Added Component: Designator=RFX5(LCC4 - duplicate4)
+Added Component: Designator=RFX6(LCC4 - duplicate4)
+Added Component: Designator=RFX7(LCC4 - duplicate4)
+Added Component: Designator=RFX8(LCC4 - duplicate4)
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=VCC Pin=C?-2
+Added Pin To Net: NetName=Netmux_1 Pin=mux-1
+Added Pin To Net: NetName=Netmux_2 Pin=mux-2
+Added Pin To Net: NetName=Netmux_3 Pin=mux-3
+Added Pin To Net: NetName=Netmux_4 Pin=mux-4
+Added Pin To Net: NetName=Netmux_5 Pin=mux-5
+Added Pin To Net: NetName=GND Pin=mux-6
+Added Pin To Net: NetName=GND Pin=mux-8
+Added Pin To Net: NetName=Netmux_9 Pin=mux-9
+Added Pin To Net: NetName=Netmux_10 Pin=mux-10
+Added Pin To Net: NetName=Netmux_11 Pin=mux-11
+Added Pin To Net: NetName=Netmux_12 Pin=mux-12
+Added Pin To Net: NetName=Netmux_13 Pin=mux-13
+Added Pin To Net: NetName=Netmux_14 Pin=mux-14
+Added Pin To Net: NetName=Netmux_15 Pin=mux-15
+Added Pin To Net: NetName=VCC Pin=mux-16
+Added Pin To Net: NetName=VCC Pin=p1-1
+Added Pin To Net: NetName=GND Pin=p1-2
+Added Pin To Net: NetName=Netmux_11 Pin=p1-3
+Added Pin To Net: NetName=Netmux_10 Pin=p1-4
+Added Pin To Net: NetName=Netmux_9 Pin=p1-5
+Added Pin To Net: NetName=Netmux_3 Pin=p1-6
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Pin To Net: NetName=Netmux_12 Pin=R2-1
+Added Pin To Net: NetName=VCC Pin=R2-2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=VCC Pin=R3-2
+Added Pin To Net: NetName=Netmux_14 Pin=R4-1
+Added Pin To Net: NetName=VCC Pin=R4-2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=VCC Pin=R5-2
+Added Pin To Net: NetName=Netmux_1 Pin=R6-1
+Added Pin To Net: NetName=VCC Pin=R6-2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=VCC Pin=R7-2
+Added Pin To Net: NetName=Netmux_4 Pin=R8-1
+Added Pin To Net: NetName=VCC Pin=R8-2
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=VCC Pin=R9-2
+Added Pin To Net: NetName=Netmux_13 Pin=R10-1
+Added Pin To Net: NetName=VCC Pin=R10-2
+Added Pin To Net: NetName=NetR11_1 Pin=R11-1
+Added Pin To Net: NetName=VCC Pin=R11-2
+Added Pin To Net: NetName=Netmux_15 Pin=R12-1
+Added Pin To Net: NetName=VCC Pin=R12-2
+Added Pin To Net: NetName=NetR13_1 Pin=R13-1
+Added Pin To Net: NetName=VCC Pin=R13-2
+Added Pin To Net: NetName=Netmux_2 Pin=R14-1
+Added Pin To Net: NetName=VCC Pin=R14-2
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=VCC Pin=R15-2
+Added Pin To Net: NetName=Netmux_5 Pin=R16-1
+Added Pin To Net: NetName=VCC Pin=R16-2
+Added Pin To Net: NetName=GND Pin=RFX1-1
+Added Pin To Net: NetName=NetR1_1 Pin=RFX1-2
+Added Pin To Net: NetName=Netmux_12 Pin=RFX1-4
+Added Pin To Net: NetName=GND Pin=RFX2-1
+Added Pin To Net: NetName=NetR9_1 Pin=RFX2-2
+Added Pin To Net: NetName=GND Pin=RFX2-3
+Added Pin To Net: NetName=Netmux_13 Pin=RFX2-4
+Added Pin To Net: NetName=GND Pin=RFX3-1
+Added Pin To Net: NetName=NetR3_1 Pin=RFX3-2
+Added Pin To Net: NetName=Netmux_14 Pin=RFX3-3
+Added Pin To Net: NetName=GND Pin=RFX3-4
+Added Pin To Net: NetName=GND Pin=RFX4-1
+Added Pin To Net: NetName=NetR11_1 Pin=RFX4-2
+Added Pin To Net: NetName=GND Pin=RFX4-3
+Added Pin To Net: NetName=Netmux_15 Pin=RFX4-4
+Added Pin To Net: NetName=GND Pin=RFX5-1
+Added Pin To Net: NetName=NetR5_1 Pin=RFX5-2
+Added Pin To Net: NetName=Netmux_1 Pin=RFX5-3
+Added Pin To Net: NetName=GND Pin=RFX5-4
+Added Pin To Net: NetName=GND Pin=RFX6-1
+Added Pin To Net: NetName=NetR13_1 Pin=RFX6-2
+Added Pin To Net: NetName=GND Pin=RFX6-3
+Added Pin To Net: NetName=Netmux_2 Pin=RFX6-4
+Added Pin To Net: NetName=GND Pin=RFX7-1
+Added Pin To Net: NetName=NetR7_1 Pin=RFX7-2
+Added Pin To Net: NetName=Netmux_4 Pin=RFX7-3
+Added Pin To Net: NetName=GND Pin=RFX7-4
+Added Pin To Net: NetName=GND Pin=RFX8-1
+Added Pin To Net: NetName=NetR15_1 Pin=RFX8-2
+Added Pin To Net: NetName=GND Pin=RFX8-3
+Added Pin To Net: NetName=Netmux_5 Pin=RFX8-4
+Added Member To Class: ClassName=Sheet1 Member=Component C? Cap
+Added Member To Class: ClassName=Sheet1 Member=Component mux
+Added Member To Class: ClassName=Sheet1 Member=Component p1 IDC6
+Added Member To Class: ClassName=Sheet1 Member=Component R1 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R2 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R3 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R4 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R5 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R6 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R7 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R8 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R9 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R10 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R11 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R12 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R13 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R14 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R15 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component R16 Res2
+Added Member To Class: ClassName=Sheet1 Member=Component RFX1 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX2 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX3 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX4 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX5 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX6 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX7 ITR1201
+Added Member To Class: ClassName=Sheet1 Member=Component RFX8 ITR1201
+Added Room: Name=Sheet1

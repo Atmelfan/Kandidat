@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=Netmux_14 Pin=RFX3-3
+Removed Pin From Net: NetName=GND Pin=RFX3-4
+Removed Pin From Net: NetName=Netmux_1 Pin=RFX5-3
+Removed Pin From Net: NetName=GND Pin=RFX5-4
+Removed Pin From Net: NetName=Netmux_4 Pin=RFX7-3
+Removed Pin From Net: NetName=GND Pin=RFX7-4
+Added Pin To Net: NetName=GND Pin=RFX1-3
+Added Pin To Net: NetName=GND Pin=RFX3-3
+Added Pin To Net: NetName=Netmux_14 Pin=RFX3-4
+Added Pin To Net: NetName=GND Pin=RFX5-3
+Added Pin To Net: NetName=Netmux_1 Pin=RFX5-4
+Added Pin To Net: NetName=GND Pin=RFX7-3
+Added Pin To Net: NetName=Netmux_4 Pin=RFX7-4
