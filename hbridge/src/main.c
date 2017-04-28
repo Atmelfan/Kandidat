@@ -53,7 +53,7 @@ void setup(){
     PMIC.CTRL = PMIC_LOLVLEN_bm|PMIC_MEDLVLEN_bm|PMIC_HILVLEN_bm;
     sei();
     usart_init();
-    usart_send("Hello world!\n\r");
+    usart_send("Hello world!\r\n");
     adc_init();
 }
 volatile uint8_t do_process = 0;
