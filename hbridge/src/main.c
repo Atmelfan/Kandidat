@@ -2,9 +2,10 @@
 #include <avr/interrupt.h>
 #include <stdlib.h>
 #include "gpa_scpi.h"
-#include "motors.h"
+#include "avg_adc.h"
+#include <util/delay.h>
 
-#define SCPI_USART USARTE0
+#define SCPI_USART USARTF0
 
 void setClockTo32MHz() {
     CCP = CCP_IOREG_gc;              // disable register security for oscillator update
@@ -45,23 +46,28 @@ void usart_init(){
     SCPI_USART.CTRLC = USART_CHSIZE_8BIT_gc;
     SCPI_USART.CTRLA = USART_RXCINTLVL_LO_gc;
     SCPI_USART.CTRLB = USART_TXEN_bm | USART_RXEN_bm;
-    PORTE.DIRSET = (1 << 3);
+    PORTF.DIRSET = (1 << 3);
 }
 
 void setup(){
     PMIC.CTRL = PMIC_LOLVLEN_bm|PMIC_MEDLVLEN_bm|PMIC_HILVLEN_bm;
     sei();
     usart_init();
-    usart_send("Hello world!\n\r");
-
-    motors_init();
-    motors_start(0);
-    motors_set_duty(0, MOTORS_PERIOD); motors_set_dir(0, MOTOR_FORW);
-    motors_set_duty(1, MOTORS_PERIOD); motors_set_dir(1, MOTOR_FORW);
+    usart_send("Hello world!\r\n");
+    adc_init();
 }
+volatile uint8_t do_process = 0;
+volatile static char buf[64];
+
 
 void update(){
+    //usart_send("B\n\r");
+    if(do_process){
+        scpi_execute((char*)buf);
+        do_process = 0;
 
+    }
+    //_delay_ms(100);
 }
 
 
@@ -77,9 +83,7 @@ int main(void){
 
 
 
-
-ISR(USARTE0_RXC_vect){
-    static char buf[64];
+ISR(USARTF0_RXC_vect){
     static uint8_t indx = 0;
     static uint8_t mindx = 0;
     char tmp = SCPI_USART.DATA;
@@ -92,7 +96,7 @@ ISR(USARTE0_RXC_vect){
     usart_sendc(tmp);//Echo
     if(tmp == '\r'){
         buf[indx] = '\0';
-        scpi_execute(buf);
+        do_process = 1;
         indx = mindx = 0;
     }else{
         indx++;
