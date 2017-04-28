@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/avr_main.dir/main.c.obj"
   "CMakeFiles/avr_main.dir/gpa_scpi.c.obj"
   "CMakeFiles/avr_main.dir/avg_adc.c.obj"
-  "CMakeFiles/avr_main.dir/scpi_distance.c.obj"
+  "CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
   "../bin/avr_main.pdb"
   "../bin/avr_main"
 )

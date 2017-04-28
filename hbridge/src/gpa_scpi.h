@@ -6,9 +6,9 @@
 #define SCPI_GPA_SCPI_H
 
 #include "stdlib.h"
-#include "scpi_distance.h"
+#include "scpi_sensors.h"
 
-#define SCPI_IDN "AGV3 Motor Driver v0.1"
+#define SCPI_IDN "AGV3 Main controller v0.1"
 
 struct scpi_command;
 
@@ -27,7 +27,8 @@ typedef struct scpi_command scpi_command;
  * Prints s to console
  * @param s
  */
-extern void scpi_print(const char* s);
+void scpi_println(const char *s);
+extern void scpi_print(const char *s);
 
 
 const char* compare_command(const char* str, const char* command);
@@ -51,9 +52,9 @@ const char* scpi_clear(const char* command);
 static struct scpi_command scpi_commands[] = {
     {.name = "SENSor", SCPI_DIR, .num_subcommands = 3,
         .subcommands = (scpi_command*) &(scpi_command[]) {
-            {.name="DISTance", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_distance_get0, .subcommands = NULL},
-            {.name="LINe", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
-            {.name="VOLTage", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
+                {.name="DISTance", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_distance_get0, .subcommands = NULL},
+                {.name="LINe", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_line_get, .subcommands = NULL},
+                {.name="VOLTage", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
         }
     },
     /**

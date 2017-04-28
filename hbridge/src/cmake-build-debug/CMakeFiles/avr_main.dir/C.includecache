@@ -27,8 +27,8 @@ ctype.h
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
 stdlib.h
 /media/data/kandidat/Kandidat/hbridge/src/stdlib.h
-scpi_distance.h
-/media/data/kandidat/Kandidat/hbridge/src/scpi_distance.h
+scpi_sensors.h
+/media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.h
 
 /media/data/kandidat/Kandidat/hbridge/src/main.c
 avr/io.h
@@ -44,15 +44,17 @@ avg_adc.h
 util/delay.h
 -
 
-/media/data/kandidat/Kandidat/hbridge/src/scpi_distance.c
+/media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c
 stddef.h
 -
 stdio.h
+-
+util/delay.h
 -
 gpa_scpi.h
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
 avg_adc.h
 /media/data/kandidat/Kandidat/hbridge/src/avg_adc.h
 
-/media/data/kandidat/Kandidat/hbridge/src/scpi_distance.h
+/media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.h
 

@@ -33,11 +33,8 @@ void usart_int(uint16_t i, uint8_t base){
     usart_send(buf);
 }
 
-void scpi_print(const char* s){
+void scpi_print(const char *s){
     usart_send(s);
-    usart_sendc('\n');
-    usart_sendc('\r');
-
 }
 
 void usart_init(){
@@ -53,7 +50,7 @@ void setup(){
     PMIC.CTRL = PMIC_LOLVLEN_bm|PMIC_MEDLVLEN_bm|PMIC_HILVLEN_bm;
     sei();
     usart_init();
-    usart_send("Hello world!\r\n");
+    //usart_send("Hello world!\r\n");
     adc_init();
 }
 volatile uint8_t do_process = 0;
@@ -88,13 +85,13 @@ ISR(USARTF0_RXC_vect){
     static uint8_t mindx = 0;
     char tmp = SCPI_USART.DATA;
     buf[indx] = tmp;
-    if(tmp == '\b' && indx > 0){
+/*    if(tmp == '\b' && indx > 0){
         indx --;
         usart_send("\b \b");
         return;
-    }
-    usart_sendc(tmp);//Echo
-    if(tmp == '\r'){
+    }*/
+    //usart_sendc(tmp);//Echo
+    if(tmp == '\n'){
         buf[indx] = '\0';
         do_process = 1;
         indx = mindx = 0;

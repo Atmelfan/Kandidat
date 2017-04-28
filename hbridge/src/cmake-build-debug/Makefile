@@ -204,32 +204,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/main.c.s
 .PHONY : main.c.s
 
-scpi_distance.obj: scpi_distance.c.obj
+scpi_sensors.obj: scpi_sensors.c.obj
 
-.PHONY : scpi_distance.obj
+.PHONY : scpi_sensors.obj
 
 # target to build an object file
-scpi_distance.c.obj:
-	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.obj
-.PHONY : scpi_distance.c.obj
+scpi_sensors.c.obj:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_sensors.c.obj
+.PHONY : scpi_sensors.c.obj
 
-scpi_distance.i: scpi_distance.c.i
+scpi_sensors.i: scpi_sensors.c.i
 
-.PHONY : scpi_distance.i
+.PHONY : scpi_sensors.i
 
 # target to preprocess a source file
-scpi_distance.c.i:
-	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.i
-.PHONY : scpi_distance.c.i
+scpi_sensors.c.i:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_sensors.c.i
+.PHONY : scpi_sensors.c.i
 
-scpi_distance.s: scpi_distance.c.s
+scpi_sensors.s: scpi_sensors.c.s
 
-.PHONY : scpi_distance.s
+.PHONY : scpi_sensors.s
 
 # target to generate assembly for a file
-scpi_distance.c.s:
-	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.s
-.PHONY : scpi_distance.c.s
+scpi_sensors.c.s:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_sensors.c.s
+.PHONY : scpi_sensors.c.s
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... scpi_distance.obj"
-	@echo "... scpi_distance.i"
-	@echo "... scpi_distance.s"
+	@echo "... scpi_sensors.obj"
+	@echo "... scpi_sensors.i"
+	@echo "... scpi_sensors.s"
 .PHONY : help
 
 

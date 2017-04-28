@@ -6,15 +6,15 @@ CMakeFiles/avr_main.dir/avg_adc.c.obj: ../avg_adc.h
 
 CMakeFiles/avr_main.dir/gpa_scpi.c.obj: ../gpa_scpi.c
 CMakeFiles/avr_main.dir/gpa_scpi.c.obj: ../gpa_scpi.h
-CMakeFiles/avr_main.dir/gpa_scpi.c.obj: ../scpi_distance.h
+CMakeFiles/avr_main.dir/gpa_scpi.c.obj: ../scpi_sensors.h
 
 CMakeFiles/avr_main.dir/main.c.obj: ../avg_adc.h
 CMakeFiles/avr_main.dir/main.c.obj: ../gpa_scpi.h
 CMakeFiles/avr_main.dir/main.c.obj: ../main.c
-CMakeFiles/avr_main.dir/main.c.obj: ../scpi_distance.h
+CMakeFiles/avr_main.dir/main.c.obj: ../scpi_sensors.h
 
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: ../avg_adc.h
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: ../gpa_scpi.h
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: ../scpi_distance.c
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: ../scpi_distance.h
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: ../avg_adc.h
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: ../gpa_scpi.h
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: ../scpi_sensors.c
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: ../scpi_sensors.h
 

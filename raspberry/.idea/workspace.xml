@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4197cb4a-299b-4e63-a5ad-22bb88ddb8dd" name="Default" comment="">
-<<<<<<< HEAD
+<<<<<<< ours
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remote_ctrl.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../hbridge/goldsrc/cmake-build-debug/CMakeFiles/avr-clion.dir/Descriptors.c.o" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../hbridge/goldsrc/cmake-build-debug/CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o" afterPath="" />
@@ -82,16 +82,16 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bluetooth_server.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scpi_client.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scpi_server.py" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/raspberry.iml" afterPath="$PROJECT_DIR$/.idea/raspberry.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
+<<<<<<< ours
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/agv_config.gmd" afterPath="$PROJECT_DIR$/agv_config.gmd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aruco_picam.py" afterPath="$PROJECT_DIR$/aruco_picam.py" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,11 +103,11 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/raspberry$BluetoothServer.coverage" NAME="BluetoothServer Coverage Results" MODIFIED="1493287995451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/raspberry$Detect_tags.coverage" NAME="Detect tags Coverage Results" MODIFIED="1490584263775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-<<<<<<< HEAD
+<<<<<<< ours
     <SUITE FILE_PATH="coverage/raspberry$Remote.coverage" NAME="Remote Coverage Results" MODIFIED="1491760841402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
 =======
     <SUITE FILE_PATH="coverage/raspberry$Make_tag.coverage" NAME="Make tag Coverage Results" MODIFIED="1490225169190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -118,13 +118,13 @@
       <file leaf-file-name="aruco_picam.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aruco_picam.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
             <state relative-caret-position="100">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="51" />
 =======
             <state relative-caret-position="-142">
               <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -135,13 +135,13 @@
       <file leaf-file-name="agv_camera.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agv_camera.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
             <state relative-caret-position="376">
               <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
 =======
             <state relative-caret-position="177">
               <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -152,19 +152,19 @@
       <file leaf-file-name="performance.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/performance.txt">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
             <state relative-caret-position="200">
               <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
 =======
             <state relative-caret-position="80">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
+<<<<<<< ours
       <file leaf-file-name="remote_ctrl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/remote_ctrl.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -182,7 +182,7 @@
 =======
       <file leaf-file-name="bluetooth_server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bluetooth_server.py">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
@@ -206,13 +206,13 @@
       <file leaf-file-name="agv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agv.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
             <state relative-caret-position="60">
               <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
 =======
             <state relative-caret-position="64">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
               <folding />
             </state>
           </provider>
@@ -221,13 +221,13 @@
       <file leaf-file-name="agv_sensors.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agv_sensors.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
             <state relative-caret-position="320">
               <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
 =======
             <state relative-caret-position="178">
               <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -293,7 +293,7 @@
         <option value="$PROJECT_DIR$/aruco_make.py" />
         <option value="$PROJECT_DIR$/aruco_test.py" />
         <option value="$PROJECT_DIR$/performance.txt" />
-<<<<<<< HEAD
+<<<<<<< ours
         <option value="$PROJECT_DIR$/remote_ctrl.py" />
 =======
         <option value="$PROJECT_DIR$/AGVState.py" />
@@ -306,7 +306,7 @@
         <option value="$PROJECT_DIR$/scpi_server.py" />
         <option value="$PROJECT_DIR$/agv_sensors.py" />
         <option value="$PROJECT_DIR$/scpi_client.py" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
       </list>
     </option>
   </component>
@@ -317,7 +317,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
+<<<<<<< ours
     <option name="x" value="67" />
     <option name="y" value="24" />
     <option name="width" value="1853" />
@@ -327,7 +327,7 @@
     <option name="y" value="25" />
     <option name="width" value="1368" />
     <option name="height" value="744" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -366,7 +366,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
-<<<<<<< HEAD
+<<<<<<< ours
     <property name="last_opened_file_path" value="$PROJECT_DIR$/remote_ctrl.py" />
     <property name="settings.editor.selected.configurable" value="web.server" />
 =======
@@ -381,7 +381,7 @@
         <option name="myModuleName" value="raspberry" />
       </console-settings>
     </option>
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -619,7 +619,7 @@
       <option name="PARAMETERS" value="-c raspicam -x 1280 -y 720" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-<<<<<<< HEAD
+<<<<<<< ours
       <method />
     </configuration>
     <configuration default="false" name="Remote" type="PythonConfigurationType" factoryName="Python">
@@ -671,7 +671,7 @@
       <item index="0" class="java.lang.String" itemvalue="Python.Make tag" />
       <item index="1" class="java.lang.String" itemvalue="Python.Detect tags" />
       <item index="2" class="java.lang.String" itemvalue="Python.BluetoothServer" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
     </list>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -744,7 +744,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
+<<<<<<< ours
     <frame x="67" y="24" width="1853" height="1056" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -767,7 +767,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22565688" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -802,11 +802,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/aruco_test.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="100">
 =======
         <state relative-caret-position="80">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="51" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -816,11 +816,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aruco_picam.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="2040">
 =======
         <state relative-caret-position="1728">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -838,11 +838,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agv_config.gmd">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="60">
 =======
         <state relative-caret-position="48">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
@@ -850,11 +850,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aruco_make.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="320">
 =======
         <state relative-caret-position="256">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -864,11 +864,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/performance.txt">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="200">
 =======
         <state relative-caret-position="160">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
@@ -906,11 +906,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aruco_test.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="100">
 =======
         <state relative-caret-position="80">
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="51" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -938,26 +938,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agv_config.gmd">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="60">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
 =======
         <state relative-caret-position="160">
           <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bluetooth_server.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="320">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
 =======
         <state relative-caret-position="132">
           <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1000,20 +1000,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aruco_picam.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<<<<<<< ours
         <state relative-caret-position="376">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
 =======
         <state relative-caret-position="-142">
           <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
+<<<<<<< ours
     <entry file="file://$PROJECT_DIR$/remote_ctrl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -1053,7 +1053,7 @@
         <state relative-caret-position="-174">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding />
->>>>>>> 44af3da3cf7f22a2afdc643f61c5c8ee51de2931
+>>>>>>> theirs
         </state>
       </provider>
     </entry>

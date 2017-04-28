@@ -23,7 +23,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 #============================================================================================
 
-SET(SOURCE_FILES main.c gpa_scpi.c avg_adc.h avg_adc.c scpi_distance.h scpi_distance.c)
+SET(SOURCE_FILES main.c gpa_scpi.c avg_adc.h avg_adc.c scpi_sensors.h scpi_sensors.c)
 
 #============================================================================================
 

@@ -17,7 +17,7 @@ uint8_t ReadSignatureByte(uint16_t Address)
 void adc_init() {
     ADCA.CTRLA = ADC_ENABLE_bm;
     ADCA.CTRLB = 0;
-    ADCA.PRESCALER = ADC_PRESCALER_DIV512_gc ;
+    ADCA.PRESCALER = ADC_PRESCALER_DIV512_gc;
     ADCA.CALL = ReadSignatureByte(0x20) ; //ADC Calibration Byte 0
     ADCA.CALH = ReadSignatureByte(0x21) ; //ADC Calibration Byte 1
     ADCA.REFCTRL = ADC_VREF;

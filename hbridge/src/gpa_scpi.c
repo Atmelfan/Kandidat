@@ -66,7 +66,7 @@ void scpi_execute_F(const char *command, struct scpi_command* commands, int N) {
             if(coms[i].subcommands != NULL){
                 scpi_execute_F(s, coms[i].subcommands, coms[i].num_subcommands);
             }else{
-                scpi_print("[SCPI] No subcommands!");
+                scpi_println("[SCPI] No subcommands!");
             }
 
         }else if(*s == '?'){
@@ -75,7 +75,7 @@ void scpi_execute_F(const char *command, struct scpi_command* commands, int N) {
             if(coms[i].scpi_query != NULL){
                 s = coms[i].scpi_query(s);
             }else{
-                scpi_print("[SCPI] Not queryable!");
+                scpi_println("[SCPI] Not queryable!");
             }
             if(s != NULL){
                 s++;
@@ -86,7 +86,7 @@ void scpi_execute_F(const char *command, struct scpi_command* commands, int N) {
             if(coms[i].scpi_handler != NULL){
                 s = coms[i].scpi_handler(s);
             }else{
-                scpi_print("[SCPI] Not callable!");
+                scpi_println("[SCPI] Not callable!");
             }
             if(s != NULL){
                 s++;
@@ -97,7 +97,7 @@ void scpi_execute_F(const char *command, struct scpi_command* commands, int N) {
 
     }
     //No commands matched.
-    scpi_print("[SCPI] Command does not exist!");
+    scpi_println("[SCPI] Command does not exist!");
 }
 
 void scpi_execute(const char* command){
@@ -109,21 +109,27 @@ const char* scpi_nop(const char *command) {
 }
 
 const char *scpi_query_nyi(const char *command) {
-    scpi_print("QUERY NOT YET IMPLEMENTED!");
+    scpi_println("QUERY NOT YET IMPLEMENTED!");
     return scpi_nop(command);
 }
 
 const char *scpi_handler_nyi(const char *command) {
-    scpi_print("COMMAND NOT YET IMPLEMENTED!");
+    scpi_println("COMMAND NOT YET IMPLEMENTED!");
     return scpi_nop(command);
 }
 
 const char *scpi_idn(const char *command) {
-    scpi_print(SCPI_IDN);
+    scpi_println(SCPI_IDN);
     return scpi_nop(command);
 }
 
 const char *scpi_clear(const char *command) {
-    scpi_print("\033[2J");
+    scpi_println("\033[2J");
     return scpi_nop(command);;
+}
+
+void scpi_println(const char *s) {
+    scpi_print(s);
+    scpi_print("\r\n");
+
 }

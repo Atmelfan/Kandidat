@@ -129,28 +129,28 @@ CMakeFiles/avr_main.dir/avg_adc.c.obj.provides: CMakeFiles/avr_main.dir/avg_adc.
 CMakeFiles/avr_main.dir/avg_adc.c.obj.provides.build: CMakeFiles/avr_main.dir/avg_adc.c.obj
 
 
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: CMakeFiles/avr_main.dir/flags.make
-CMakeFiles/avr_main.dir/scpi_distance.c.obj: ../scpi_distance.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/avr_main.dir/scpi_distance.c.obj"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr_main.dir/scpi_distance.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/scpi_distance.c
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: CMakeFiles/avr_main.dir/flags.make
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj: ../scpi_sensors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr_main.dir/scpi_sensors.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c
 
-CMakeFiles/avr_main.dir/scpi_distance.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr_main.dir/scpi_distance.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/scpi_distance.c > CMakeFiles/avr_main.dir/scpi_distance.c.i
+CMakeFiles/avr_main.dir/scpi_sensors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr_main.dir/scpi_sensors.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c > CMakeFiles/avr_main.dir/scpi_sensors.c.i
 
-CMakeFiles/avr_main.dir/scpi_distance.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr_main.dir/scpi_distance.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/scpi_distance.c -o CMakeFiles/avr_main.dir/scpi_distance.c.s
+CMakeFiles/avr_main.dir/scpi_sensors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr_main.dir/scpi_sensors.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c -o CMakeFiles/avr_main.dir/scpi_sensors.c.s
 
-CMakeFiles/avr_main.dir/scpi_distance.c.obj.requires:
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj.requires:
 
-.PHONY : CMakeFiles/avr_main.dir/scpi_distance.c.obj.requires
+.PHONY : CMakeFiles/avr_main.dir/scpi_sensors.c.obj.requires
 
-CMakeFiles/avr_main.dir/scpi_distance.c.obj.provides: CMakeFiles/avr_main.dir/scpi_distance.c.obj.requires
-	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.obj.provides.build
-.PHONY : CMakeFiles/avr_main.dir/scpi_distance.c.obj.provides
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides: CMakeFiles/avr_main.dir/scpi_sensors.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides.build
+.PHONY : CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides
 
-CMakeFiles/avr_main.dir/scpi_distance.c.obj.provides.build: CMakeFiles/avr_main.dir/scpi_distance.c.obj
+CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides.build: CMakeFiles/avr_main.dir/scpi_sensors.c.obj
 
 
 # Object files for target avr_main
@@ -158,7 +158,7 @@ avr_main_OBJECTS = \
 "CMakeFiles/avr_main.dir/main.c.obj" \
 "CMakeFiles/avr_main.dir/gpa_scpi.c.obj" \
 "CMakeFiles/avr_main.dir/avg_adc.c.obj" \
-"CMakeFiles/avr_main.dir/scpi_distance.c.obj"
+"CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
 
 # External object files for target avr_main
 avr_main_EXTERNAL_OBJECTS =
@@ -166,7 +166,7 @@ avr_main_EXTERNAL_OBJECTS =
 ../bin/avr_main: CMakeFiles/avr_main.dir/main.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/gpa_scpi.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/avg_adc.c.obj
-../bin/avr_main: CMakeFiles/avr_main.dir/scpi_distance.c.obj
+../bin/avr_main: CMakeFiles/avr_main.dir/scpi_sensors.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/build.make
 ../bin/avr_main: CMakeFiles/avr_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ../bin/avr_main"
@@ -183,7 +183,7 @@ CMakeFiles/avr_main.dir/build: ../bin/avr_main
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/main.c.obj.requires
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/gpa_scpi.c.obj.requires
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/avg_adc.c.obj.requires
-CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/scpi_distance.c.obj.requires
+CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/scpi_sensors.c.obj.requires
 
 .PHONY : CMakeFiles/avr_main.dir/requires
 

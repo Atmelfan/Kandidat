@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/media/data/kandidat/Kandidat/hbridge/src/avg_adc.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/avg_adc.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/gpa_scpi.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/main.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/main.c.obj"
-  "/media/data/kandidat/Kandidat/hbridge/src/scpi_distance.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/scpi_distance.c.obj"
+  "/media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
