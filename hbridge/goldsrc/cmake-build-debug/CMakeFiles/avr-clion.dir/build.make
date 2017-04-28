@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atmelfan/documents/Kandidat/hbridge/goldsrc
+CMAKE_SOURCE_DIR = /media/data/kandidat/Kandidat/hbridge/goldsrc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug
+CMAKE_BINARY_DIR = /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/avr-clion.dir/depend.make
@@ -57,889 +57,970 @@ include CMakeFiles/avr-clion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/avr-clion.dir/flags.make
 
-CMakeFiles/avr-clion.dir/VirtualSerial.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/VirtualSerial.c.o: ../VirtualSerial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/avr-clion.dir/VirtualSerial.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/VirtualSerial.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/VirtualSerial.c
+CMakeFiles/avr-clion.dir/VirtualSerial.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/VirtualSerial.c.obj: ../VirtualSerial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/avr-clion.dir/VirtualSerial.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/VirtualSerial.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/VirtualSerial.c
 
 CMakeFiles/avr-clion.dir/VirtualSerial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/VirtualSerial.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/VirtualSerial.c > CMakeFiles/avr-clion.dir/VirtualSerial.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/VirtualSerial.c > CMakeFiles/avr-clion.dir/VirtualSerial.c.i
 
 CMakeFiles/avr-clion.dir/VirtualSerial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/VirtualSerial.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/VirtualSerial.c -o CMakeFiles/avr-clion.dir/VirtualSerial.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/VirtualSerial.c -o CMakeFiles/avr-clion.dir/VirtualSerial.c.s
 
-CMakeFiles/avr-clion.dir/VirtualSerial.c.o.requires:
+CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/VirtualSerial.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.requires
 
-CMakeFiles/avr-clion.dir/VirtualSerial.c.o.provides: CMakeFiles/avr-clion.dir/VirtualSerial.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/VirtualSerial.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/VirtualSerial.c.o.provides
+CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.provides: CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.provides
 
-CMakeFiles/avr-clion.dir/VirtualSerial.c.o.provides.build: CMakeFiles/avr-clion.dir/VirtualSerial.c.o
+CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.provides.build: CMakeFiles/avr-clion.dir/VirtualSerial.c.obj
 
 
-CMakeFiles/avr-clion.dir/Descriptors.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/Descriptors.c.o: ../Descriptors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/avr-clion.dir/Descriptors.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/Descriptors.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/Descriptors.c
+CMakeFiles/avr-clion.dir/Descriptors.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/Descriptors.c.obj: ../Descriptors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/avr-clion.dir/Descriptors.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/Descriptors.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/Descriptors.c
 
 CMakeFiles/avr-clion.dir/Descriptors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/Descriptors.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/Descriptors.c > CMakeFiles/avr-clion.dir/Descriptors.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/Descriptors.c > CMakeFiles/avr-clion.dir/Descriptors.c.i
 
 CMakeFiles/avr-clion.dir/Descriptors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/Descriptors.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/Descriptors.c -o CMakeFiles/avr-clion.dir/Descriptors.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/Descriptors.c -o CMakeFiles/avr-clion.dir/Descriptors.c.s
 
-CMakeFiles/avr-clion.dir/Descriptors.c.o.requires:
+CMakeFiles/avr-clion.dir/Descriptors.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/Descriptors.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/Descriptors.c.obj.requires
 
-CMakeFiles/avr-clion.dir/Descriptors.c.o.provides: CMakeFiles/avr-clion.dir/Descriptors.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/Descriptors.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/Descriptors.c.o.provides
+CMakeFiles/avr-clion.dir/Descriptors.c.obj.provides: CMakeFiles/avr-clion.dir/Descriptors.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/Descriptors.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/Descriptors.c.obj.provides
 
-CMakeFiles/avr-clion.dir/Descriptors.c.o.provides.build: CMakeFiles/avr-clion.dir/Descriptors.c.o
+CMakeFiles/avr-clion.dir/Descriptors.c.obj.provides.build: CMakeFiles/avr-clion.dir/Descriptors.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: ../gpa_scpi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/avr-clion.dir/gpa_scpi.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/gpa_scpi.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/gpa_scpi.c
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/gpa_scpi.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/gpa_scpi.c > CMakeFiles/avr-clion.dir/gpa_scpi.c.i
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/gpa_scpi.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/gpa_scpi.c -o CMakeFiles/avr-clion.dir/gpa_scpi.c.s
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides
+
+CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.provides.build: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+
+
+CMakeFiles/avr-clion.dir/motors.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/motors.c.obj: ../motors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/avr-clion.dir/motors.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/motors.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/motors.c
+
+CMakeFiles/avr-clion.dir/motors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/motors.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/motors.c > CMakeFiles/avr-clion.dir/motors.c.i
+
+CMakeFiles/avr-clion.dir/motors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/motors.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/motors.c -o CMakeFiles/avr-clion.dir/motors.c.s
+
+CMakeFiles/avr-clion.dir/motors.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/motors.c.obj.requires
+
+CMakeFiles/avr-clion.dir/motors.c.obj.provides: CMakeFiles/avr-clion.dir/motors.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/motors.c.obj.provides
+
+CMakeFiles/avr-clion.dir/motors.c.obj.provides.build: CMakeFiles/avr-clion.dir/motors.c.obj
+
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../motors_scpi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/avr-clion.dir/motors_scpi.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/motors_scpi.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/motors_scpi.c
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/motors_scpi.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/motors_scpi.c > CMakeFiles/avr-clion.dir/motors_scpi.c.i
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/motors_scpi.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/motors_scpi.c -o CMakeFiles/avr-clion.dir/motors_scpi.c.s
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires:
+
+.PHONY : CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides: CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides
+
+CMakeFiles/avr-clion.dir/motors_scpi.c.obj.provides.build: CMakeFiles/avr-clion.dir/motors_scpi.c.obj
+
+
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o: ../LUFA/Drivers/USB/Core/ConfigDescriptors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj: ../LUFA/Drivers/USB/Core/ConfigDescriptors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o: ../LUFA/Drivers/USB/Core/Events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj: ../LUFA/Drivers/USB/Core/Events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o: ../LUFA/Drivers/USB/Core/USBTask.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj: ../LUFA/Drivers/USB/Core/USBTask.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o: ../LUFA/Drivers/USB/Class/Common/HIDParser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj: ../LUFA/Drivers/USB/Class/Common/HIDParser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o: ../LUFA/Drivers/USB/Core/HostStandardReq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj: ../LUFA/Drivers/USB/Core/HostStandardReq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o: ../LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj: ../LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o: ../LUFA/Drivers/USB/Core/DeviceStandardReq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj: ../LUFA/Drivers/USB/Core/DeviceStandardReq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/AudioClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/AudioClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/CDCClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/CDCClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/HIDClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/HIDClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o: ../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj: ../LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/AudioClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/AudioClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/CDCClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/CDCClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/HIDClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/HIDClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/MIDIClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/MIDIClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/PrinterClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/PrinterClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/RNDISClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/RNDISClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj
 
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o: CMakeFiles/avr-clion.dir/flags.make
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o: ../LUFA/Drivers/USB/Class/Host/StillImageClassHost.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o   -c /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj: CMakeFiles/avr-clion.dir/flags.make
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj: ../LUFA/Drivers/USB/Class/Host/StillImageClassHost.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj   -c /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c > CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
 
 CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s"
-	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c -o CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.requires:
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.requires:
 
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.requires
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.requires
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.requires
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.provides.build
-.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.provides
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.provides: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.provides.build
+.PHONY : CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.provides
 
-CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o
+CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.provides.build: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj
 
 
 # Object files for target avr-clion
 avr__clion_OBJECTS = \
-"CMakeFiles/avr-clion.dir/VirtualSerial.c.o" \
-"CMakeFiles/avr-clion.dir/Descriptors.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o" \
-"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o"
+"CMakeFiles/avr-clion.dir/VirtualSerial.c.obj" \
+"CMakeFiles/avr-clion.dir/Descriptors.c.obj" \
+"CMakeFiles/avr-clion.dir/gpa_scpi.c.obj" \
+"CMakeFiles/avr-clion.dir/motors.c.obj" \
+"CMakeFiles/avr-clion.dir/motors_scpi.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj" \
+"CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj"
 
 # External object files for target avr-clion
 avr__clion_EXTERNAL_OBJECTS =
 
-../bin/avr-clion: CMakeFiles/avr-clion.dir/VirtualSerial.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/Descriptors.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o
-../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o
+../bin/avr-clion: CMakeFiles/avr-clion.dir/VirtualSerial.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/Descriptors.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/motors.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/motors_scpi.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj
+../bin/avr-clion: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj
 ../bin/avr-clion: CMakeFiles/avr-clion.dir/build.make
 ../bin/avr-clion: CMakeFiles/avr-clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable ../bin/avr-clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable ../bin/avr-clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/avr-clion.dir/link.txt --verbose=$(VERBOSE)
-	avr-objcopy -O ihex -R.eeprom /home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion /home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion.hex
-	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 /home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion /home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion.eep
-	avr-size /home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion --mcu=atxmega32a4u --format=avr
+	avr-objcopy -O ihex -R.eeprom /media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion /media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion.hex
+	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 /media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion /media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion.eep
+	avr-size /media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion --mcu=atxmega32a4u --format=avr
 
 # Rule to build all files generated by this target.
 CMakeFiles/avr-clion.dir/build: ../bin/avr-clion
 
 .PHONY : CMakeFiles/avr-clion.dir/build
 
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/VirtualSerial.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/Descriptors.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o.requires
-CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/VirtualSerial.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/Descriptors.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/gpa_scpi.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/motors.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/motors_scpi.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj.requires
+CMakeFiles/avr-clion.dir/requires: CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj.requires
 
 .PHONY : CMakeFiles/avr-clion.dir/requires
 
@@ -948,6 +1029,6 @@ CMakeFiles/avr-clion.dir/clean:
 .PHONY : CMakeFiles/avr-clion.dir/clean
 
 CMakeFiles/avr-clion.dir/depend:
-	cd /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atmelfan/documents/Kandidat/hbridge/goldsrc /home/atmelfan/documents/Kandidat/hbridge/goldsrc /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles/avr-clion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/data/kandidat/Kandidat/hbridge/goldsrc /media/data/kandidat/Kandidat/hbridge/goldsrc /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles/avr-clion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/avr-clion.dir/depend
 

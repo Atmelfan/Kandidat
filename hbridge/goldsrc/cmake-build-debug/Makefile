@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atmelfan/documents/Kandidat/hbridge/goldsrc
+CMAKE_SOURCE_DIR = /media/data/kandidat/Kandidat/hbridge/goldsrc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug
+CMAKE_BINARY_DIR = /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/atmelfan/intellij/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,26 +111,26 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named avr-clion
+# Target rules for targets named avg_motors
 
 # Build rule for target.
-avr-clion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 avr-clion
-.PHONY : avr-clion
+avg_motors: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 avg_motors
+.PHONY : avg_motors
 
 # fast build rule for target.
-avr-clion/fast:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/build
-.PHONY : avr-clion/fast
+avg_motors/fast:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/build
+.PHONY : avg_motors/fast
 
-Descriptors.o: Descriptors.c.o
+Descriptors.obj: Descriptors.c.obj
 
-.PHONY : Descriptors.o
+.PHONY : Descriptors.obj
 
 # target to build an object file
-Descriptors.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/Descriptors.c.o
-.PHONY : Descriptors.c.o
+Descriptors.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/Descriptors.c.obj
+.PHONY : Descriptors.c.obj
 
 Descriptors.i: Descriptors.c.i
 
@@ -138,7 +138,7 @@ Descriptors.i: Descriptors.c.i
 
 # target to preprocess a source file
 Descriptors.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/Descriptors.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/Descriptors.c.i
 .PHONY : Descriptors.c.i
 
 Descriptors.s: Descriptors.c.s
@@ -147,17 +147,17 @@ Descriptors.s: Descriptors.c.s
 
 # target to generate assembly for a file
 Descriptors.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/Descriptors.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/Descriptors.c.s
 .PHONY : Descriptors.c.s
 
-LUFA/Drivers/USB/Class/Common/HIDParser.o: LUFA/Drivers/USB/Class/Common/HIDParser.c.o
+LUFA/Drivers/USB/Class/Common/HIDParser.obj: LUFA/Drivers/USB/Class/Common/HIDParser.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.o
+.PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Common/HIDParser.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.o
-.PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.c.o
+LUFA/Drivers/USB/Class/Common/HIDParser.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.c.obj
 
 LUFA/Drivers/USB/Class/Common/HIDParser.i: LUFA/Drivers/USB/Class/Common/HIDParser.c.i
 
@@ -165,7 +165,7 @@ LUFA/Drivers/USB/Class/Common/HIDParser.i: LUFA/Drivers/USB/Class/Common/HIDPars
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Common/HIDParser.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.i
 .PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.c.i
 
 LUFA/Drivers/USB/Class/Common/HIDParser.s: LUFA/Drivers/USB/Class/Common/HIDParser.c.s
@@ -174,17 +174,17 @@ LUFA/Drivers/USB/Class/Common/HIDParser.s: LUFA/Drivers/USB/Class/Common/HIDPars
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Common/HIDParser.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Common/HIDParser.c.s
 .PHONY : LUFA/Drivers/USB/Class/Common/HIDParser.c.s
 
-LUFA/Drivers/USB/Class/Device/AudioClassDevice.o: LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/AudioClassDevice.obj: LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/AudioClassDevice.i: LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
 
@@ -192,7 +192,7 @@ LUFA/Drivers/USB/Class/Device/AudioClassDevice.i: LUFA/Drivers/USB/Class/Device/
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/AudioClassDevice.s: LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
@@ -201,17 +201,17 @@ LUFA/Drivers/USB/Class/Device/AudioClassDevice.s: LUFA/Drivers/USB/Class/Device/
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/AudioClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/CDCClassDevice.o: LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/CDCClassDevice.obj: LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/CDCClassDevice.i: LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
 
@@ -219,7 +219,7 @@ LUFA/Drivers/USB/Class/Device/CDCClassDevice.i: LUFA/Drivers/USB/Class/Device/CD
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/CDCClassDevice.s: LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
@@ -228,17 +228,17 @@ LUFA/Drivers/USB/Class/Device/CDCClassDevice.s: LUFA/Drivers/USB/Class/Device/CD
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/CDCClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/HIDClassDevice.o: LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/HIDClassDevice.obj: LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/HIDClassDevice.i: LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
 
@@ -246,7 +246,7 @@ LUFA/Drivers/USB/Class/Device/HIDClassDevice.i: LUFA/Drivers/USB/Class/Device/HI
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/HIDClassDevice.s: LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
@@ -255,17 +255,17 @@ LUFA/Drivers/USB/Class/Device/HIDClassDevice.s: LUFA/Drivers/USB/Class/Device/HI
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/HIDClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o: LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/MIDIClassDevice.obj: LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/MIDIClassDevice.i: LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
 
@@ -273,7 +273,7 @@ LUFA/Drivers/USB/Class/Device/MIDIClassDevice.i: LUFA/Drivers/USB/Class/Device/M
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/MIDIClassDevice.s: LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
@@ -282,17 +282,17 @@ LUFA/Drivers/USB/Class/Device/MIDIClassDevice.s: LUFA/Drivers/USB/Class/Device/M
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o: LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.obj: LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.i: LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
 
@@ -300,7 +300,7 @@ LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.i: LUFA/Drivers/USB/Class/D
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.s: LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
@@ -309,17 +309,17 @@ LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.s: LUFA/Drivers/USB/Class/D
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/PrinterClassDevice.o: LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/PrinterClassDevice.obj: LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/PrinterClassDevice.i: LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
 
@@ -327,7 +327,7 @@ LUFA/Drivers/USB/Class/Device/PrinterClassDevice.i: LUFA/Drivers/USB/Class/Devic
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/PrinterClassDevice.s: LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
@@ -336,17 +336,17 @@ LUFA/Drivers/USB/Class/Device/PrinterClassDevice.s: LUFA/Drivers/USB/Class/Devic
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o: LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/RNDISClassDevice.obj: LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o
+.PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o
-.PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.o
+LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.obj
 
 LUFA/Drivers/USB/Class/Device/RNDISClassDevice.i: LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
 
@@ -354,7 +354,7 @@ LUFA/Drivers/USB/Class/Device/RNDISClassDevice.i: LUFA/Drivers/USB/Class/Device/
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
 .PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.i
 
 LUFA/Drivers/USB/Class/Device/RNDISClassDevice.s: LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
@@ -363,17 +363,17 @@ LUFA/Drivers/USB/Class/Device/RNDISClassDevice.s: LUFA/Drivers/USB/Class/Device/
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
 .PHONY : LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c.s
 
-LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o: LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o
+LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.obj: LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.o
+LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.i: LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
 
@@ -381,7 +381,7 @@ LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.i: LUFA/Drivers/USB/Class/
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.s: LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
@@ -390,17 +390,17 @@ LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.s: LUFA/Drivers/USB/Class/
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/AudioClassHost.o: LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o
+LUFA/Drivers/USB/Class/Host/AudioClassHost.obj: LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.c.o
+LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/AudioClassHost.i: LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
 
@@ -408,7 +408,7 @@ LUFA/Drivers/USB/Class/Host/AudioClassHost.i: LUFA/Drivers/USB/Class/Host/AudioC
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/AudioClassHost.s: LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
@@ -417,17 +417,17 @@ LUFA/Drivers/USB/Class/Host/AudioClassHost.s: LUFA/Drivers/USB/Class/Host/AudioC
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/AudioClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/CDCClassHost.o: LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o
+LUFA/Drivers/USB/Class/Host/CDCClassHost.obj: LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.c.o
+LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/CDCClassHost.i: LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
 
@@ -435,7 +435,7 @@ LUFA/Drivers/USB/Class/Host/CDCClassHost.i: LUFA/Drivers/USB/Class/Host/CDCClass
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/CDCClassHost.s: LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
@@ -444,17 +444,17 @@ LUFA/Drivers/USB/Class/Host/CDCClassHost.s: LUFA/Drivers/USB/Class/Host/CDCClass
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/CDCClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/HIDClassHost.o: LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o
+LUFA/Drivers/USB/Class/Host/HIDClassHost.obj: LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.c.o
+LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/HIDClassHost.i: LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
 
@@ -462,7 +462,7 @@ LUFA/Drivers/USB/Class/Host/HIDClassHost.i: LUFA/Drivers/USB/Class/Host/HIDClass
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/HIDClassHost.s: LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
@@ -471,17 +471,17 @@ LUFA/Drivers/USB/Class/Host/HIDClassHost.s: LUFA/Drivers/USB/Class/Host/HIDClass
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/HIDClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/MIDIClassHost.o: LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o
+LUFA/Drivers/USB/Class/Host/MIDIClassHost.obj: LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.o
+LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/MIDIClassHost.i: LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
 
@@ -489,7 +489,7 @@ LUFA/Drivers/USB/Class/Host/MIDIClassHost.i: LUFA/Drivers/USB/Class/Host/MIDICla
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/MIDIClassHost.s: LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
@@ -498,17 +498,17 @@ LUFA/Drivers/USB/Class/Host/MIDIClassHost.s: LUFA/Drivers/USB/Class/Host/MIDICla
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/MIDIClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o: LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o
+LUFA/Drivers/USB/Class/Host/MassStorageClassHost.obj: LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.o
+LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/MassStorageClassHost.i: LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
 
@@ -516,7 +516,7 @@ LUFA/Drivers/USB/Class/Host/MassStorageClassHost.i: LUFA/Drivers/USB/Class/Host/
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/MassStorageClassHost.s: LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
@@ -525,17 +525,17 @@ LUFA/Drivers/USB/Class/Host/MassStorageClassHost.s: LUFA/Drivers/USB/Class/Host/
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/PrinterClassHost.o: LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o
+LUFA/Drivers/USB/Class/Host/PrinterClassHost.obj: LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.o
+LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/PrinterClassHost.i: LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
 
@@ -543,7 +543,7 @@ LUFA/Drivers/USB/Class/Host/PrinterClassHost.i: LUFA/Drivers/USB/Class/Host/Prin
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/PrinterClassHost.s: LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
@@ -552,17 +552,17 @@ LUFA/Drivers/USB/Class/Host/PrinterClassHost.s: LUFA/Drivers/USB/Class/Host/Prin
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/PrinterClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/RNDISClassHost.o: LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o
+LUFA/Drivers/USB/Class/Host/RNDISClassHost.obj: LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.o
+LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/RNDISClassHost.i: LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
 
@@ -570,7 +570,7 @@ LUFA/Drivers/USB/Class/Host/RNDISClassHost.i: LUFA/Drivers/USB/Class/Host/RNDISC
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/RNDISClassHost.s: LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
@@ -579,17 +579,17 @@ LUFA/Drivers/USB/Class/Host/RNDISClassHost.s: LUFA/Drivers/USB/Class/Host/RNDISC
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/RNDISClassHost.c.s
 
-LUFA/Drivers/USB/Class/Host/StillImageClassHost.o: LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o
+LUFA/Drivers/USB/Class/Host/StillImageClassHost.obj: LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj
 
-.PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.o
+.PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o
-.PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.o
+LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj
+.PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.obj
 
 LUFA/Drivers/USB/Class/Host/StillImageClassHost.i: LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
 
@@ -597,7 +597,7 @@ LUFA/Drivers/USB/Class/Host/StillImageClassHost.i: LUFA/Drivers/USB/Class/Host/S
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
 .PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.i
 
 LUFA/Drivers/USB/Class/Host/StillImageClassHost.s: LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
@@ -606,17 +606,17 @@ LUFA/Drivers/USB/Class/Host/StillImageClassHost.s: LUFA/Drivers/USB/Class/Host/S
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
 .PHONY : LUFA/Drivers/USB/Class/Host/StillImageClassHost.c.s
 
-LUFA/Drivers/USB/Core/ConfigDescriptors.o: LUFA/Drivers/USB/Core/ConfigDescriptors.c.o
+LUFA/Drivers/USB/Core/ConfigDescriptors.obj: LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.o
+.PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/ConfigDescriptors.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.o
-.PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.c.o
+LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj
+.PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.c.obj
 
 LUFA/Drivers/USB/Core/ConfigDescriptors.i: LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
 
@@ -624,7 +624,7 @@ LUFA/Drivers/USB/Core/ConfigDescriptors.i: LUFA/Drivers/USB/Core/ConfigDescripto
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/ConfigDescriptors.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
 .PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.c.i
 
 LUFA/Drivers/USB/Core/ConfigDescriptors.s: LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
@@ -633,17 +633,17 @@ LUFA/Drivers/USB/Core/ConfigDescriptors.s: LUFA/Drivers/USB/Core/ConfigDescripto
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/ConfigDescriptors.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
 .PHONY : LUFA/Drivers/USB/Core/ConfigDescriptors.c.s
 
-LUFA/Drivers/USB/Core/DeviceStandardReq.o: LUFA/Drivers/USB/Core/DeviceStandardReq.c.o
+LUFA/Drivers/USB/Core/DeviceStandardReq.obj: LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.o
+.PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/DeviceStandardReq.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.o
-.PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.c.o
+LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj
+.PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.c.obj
 
 LUFA/Drivers/USB/Core/DeviceStandardReq.i: LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
 
@@ -651,7 +651,7 @@ LUFA/Drivers/USB/Core/DeviceStandardReq.i: LUFA/Drivers/USB/Core/DeviceStandardR
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/DeviceStandardReq.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
 .PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.c.i
 
 LUFA/Drivers/USB/Core/DeviceStandardReq.s: LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
@@ -660,17 +660,17 @@ LUFA/Drivers/USB/Core/DeviceStandardReq.s: LUFA/Drivers/USB/Core/DeviceStandardR
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/DeviceStandardReq.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
 .PHONY : LUFA/Drivers/USB/Core/DeviceStandardReq.c.s
 
-LUFA/Drivers/USB/Core/Events.o: LUFA/Drivers/USB/Core/Events.c.o
+LUFA/Drivers/USB/Core/Events.obj: LUFA/Drivers/USB/Core/Events.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/Events.o
+.PHONY : LUFA/Drivers/USB/Core/Events.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/Events.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.o
-.PHONY : LUFA/Drivers/USB/Core/Events.c.o
+LUFA/Drivers/USB/Core/Events.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/Events.c.obj
+.PHONY : LUFA/Drivers/USB/Core/Events.c.obj
 
 LUFA/Drivers/USB/Core/Events.i: LUFA/Drivers/USB/Core/Events.c.i
 
@@ -678,7 +678,7 @@ LUFA/Drivers/USB/Core/Events.i: LUFA/Drivers/USB/Core/Events.c.i
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/Events.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/Events.c.i
 .PHONY : LUFA/Drivers/USB/Core/Events.c.i
 
 LUFA/Drivers/USB/Core/Events.s: LUFA/Drivers/USB/Core/Events.c.s
@@ -687,17 +687,17 @@ LUFA/Drivers/USB/Core/Events.s: LUFA/Drivers/USB/Core/Events.c.s
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/Events.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/Events.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/Events.c.s
 .PHONY : LUFA/Drivers/USB/Core/Events.c.s
 
-LUFA/Drivers/USB/Core/HostStandardReq.o: LUFA/Drivers/USB/Core/HostStandardReq.c.o
+LUFA/Drivers/USB/Core/HostStandardReq.obj: LUFA/Drivers/USB/Core/HostStandardReq.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/HostStandardReq.o
+.PHONY : LUFA/Drivers/USB/Core/HostStandardReq.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/HostStandardReq.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.o
-.PHONY : LUFA/Drivers/USB/Core/HostStandardReq.c.o
+LUFA/Drivers/USB/Core/HostStandardReq.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.obj
+.PHONY : LUFA/Drivers/USB/Core/HostStandardReq.c.obj
 
 LUFA/Drivers/USB/Core/HostStandardReq.i: LUFA/Drivers/USB/Core/HostStandardReq.c.i
 
@@ -705,7 +705,7 @@ LUFA/Drivers/USB/Core/HostStandardReq.i: LUFA/Drivers/USB/Core/HostStandardReq.c
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/HostStandardReq.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.i
 .PHONY : LUFA/Drivers/USB/Core/HostStandardReq.c.i
 
 LUFA/Drivers/USB/Core/HostStandardReq.s: LUFA/Drivers/USB/Core/HostStandardReq.c.s
@@ -714,17 +714,17 @@ LUFA/Drivers/USB/Core/HostStandardReq.s: LUFA/Drivers/USB/Core/HostStandardReq.c
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/HostStandardReq.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/HostStandardReq.c.s
 .PHONY : LUFA/Drivers/USB/Core/HostStandardReq.c.s
 
-LUFA/Drivers/USB/Core/USBTask.o: LUFA/Drivers/USB/Core/USBTask.c.o
+LUFA/Drivers/USB/Core/USBTask.obj: LUFA/Drivers/USB/Core/USBTask.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/USBTask.o
+.PHONY : LUFA/Drivers/USB/Core/USBTask.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/USBTask.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.o
-.PHONY : LUFA/Drivers/USB/Core/USBTask.c.o
+LUFA/Drivers/USB/Core/USBTask.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/USBTask.c.obj
+.PHONY : LUFA/Drivers/USB/Core/USBTask.c.obj
 
 LUFA/Drivers/USB/Core/USBTask.i: LUFA/Drivers/USB/Core/USBTask.c.i
 
@@ -732,7 +732,7 @@ LUFA/Drivers/USB/Core/USBTask.i: LUFA/Drivers/USB/Core/USBTask.c.i
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/USBTask.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/USBTask.c.i
 .PHONY : LUFA/Drivers/USB/Core/USBTask.c.i
 
 LUFA/Drivers/USB/Core/USBTask.s: LUFA/Drivers/USB/Core/USBTask.c.s
@@ -741,17 +741,17 @@ LUFA/Drivers/USB/Core/USBTask.s: LUFA/Drivers/USB/Core/USBTask.c.s
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/USBTask.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/USBTask.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/USBTask.c.s
 .PHONY : LUFA/Drivers/USB/Core/USBTask.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
 
@@ -759,7 +759,7 @@ LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Device_X
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
@@ -768,17 +768,17 @@ LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Device_X
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
 
@@ -786,7 +786,7 @@ LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
@@ -795,17 +795,17 @@ LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
 
@@ -813,7 +813,7 @@ LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Endpoi
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
@@ -822,17 +822,17 @@ LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Endpoi
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
 
@@ -840,7 +840,7 @@ LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
@@ -849,17 +849,17 @@ LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
 
@@ -867,7 +867,7 @@ LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Pipe
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
@@ -876,17 +876,17 @@ LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Pipe
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
 
@@ -894,7 +894,7 @@ LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
@@ -903,17 +903,17 @@ LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
 
@@ -921,7 +921,7 @@ LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/U
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
@@ -930,17 +930,17 @@ LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/U
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c.s
 
-LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.o: LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.obj: LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj
 
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.o
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.obj
 
 # target to build an object file
-LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o
-.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.o
+LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj
+.PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.obj
 
 LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
 
@@ -948,7 +948,7 @@ LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.i: LUFA/Drivers/USB/Core/XMEGA/US
 
 # target to preprocess a source file
 LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.i
 
 LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
@@ -957,17 +957,17 @@ LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.s: LUFA/Drivers/USB/Core/XMEGA/US
 
 # target to generate assembly for a file
 LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
 .PHONY : LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c.s
 
-VirtualSerial.o: VirtualSerial.c.o
+VirtualSerial.obj: VirtualSerial.c.obj
 
-.PHONY : VirtualSerial.o
+.PHONY : VirtualSerial.obj
 
 # target to build an object file
-VirtualSerial.c.o:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/VirtualSerial.c.o
-.PHONY : VirtualSerial.c.o
+VirtualSerial.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/VirtualSerial.c.obj
+.PHONY : VirtualSerial.c.obj
 
 VirtualSerial.i: VirtualSerial.c.i
 
@@ -975,7 +975,7 @@ VirtualSerial.i: VirtualSerial.c.i
 
 # target to preprocess a source file
 VirtualSerial.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/VirtualSerial.c.i
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/VirtualSerial.c.i
 .PHONY : VirtualSerial.c.i
 
 VirtualSerial.s: VirtualSerial.c.s
@@ -984,8 +984,89 @@ VirtualSerial.s: VirtualSerial.c.s
 
 # target to generate assembly for a file
 VirtualSerial.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/VirtualSerial.c.s
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/VirtualSerial.c.s
 .PHONY : VirtualSerial.c.s
+
+gpa_scpi.obj: gpa_scpi.c.obj
+
+.PHONY : gpa_scpi.obj
+
+# target to build an object file
+gpa_scpi.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/gpa_scpi.c.obj
+.PHONY : gpa_scpi.c.obj
+
+gpa_scpi.i: gpa_scpi.c.i
+
+.PHONY : gpa_scpi.i
+
+# target to preprocess a source file
+gpa_scpi.c.i:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/gpa_scpi.c.i
+.PHONY : gpa_scpi.c.i
+
+gpa_scpi.s: gpa_scpi.c.s
+
+.PHONY : gpa_scpi.s
+
+# target to generate assembly for a file
+gpa_scpi.c.s:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/gpa_scpi.c.s
+.PHONY : gpa_scpi.c.s
+
+motors.obj: motors.c.obj
+
+.PHONY : motors.obj
+
+# target to build an object file
+motors.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors.c.obj
+.PHONY : motors.c.obj
+
+motors.i: motors.c.i
+
+.PHONY : motors.i
+
+# target to preprocess a source file
+motors.c.i:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors.c.i
+.PHONY : motors.c.i
+
+motors.s: motors.c.s
+
+.PHONY : motors.s
+
+# target to generate assembly for a file
+motors.c.s:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors.c.s
+.PHONY : motors.c.s
+
+motors_scpi.obj: motors_scpi.c.obj
+
+.PHONY : motors_scpi.obj
+
+# target to build an object file
+motors_scpi.c.obj:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors_scpi.c.obj
+.PHONY : motors_scpi.c.obj
+
+motors_scpi.i: motors_scpi.c.i
+
+.PHONY : motors_scpi.i
+
+# target to preprocess a source file
+motors_scpi.c.i:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors_scpi.c.i
+.PHONY : motors_scpi.c.i
+
+motors_scpi.s: motors_scpi.c.s
+
+.PHONY : motors_scpi.s
+
+# target to generate assembly for a file
+motors_scpi.c.s:
+	$(MAKE) -f CMakeFiles/avg_motors.dir/build.make CMakeFiles/avg_motors.dir/motors_scpi.c.s
+.PHONY : motors_scpi.c.s
 
 # Help Target
 help:
@@ -993,105 +1074,114 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... avr-clion"
-	@echo "... Descriptors.o"
+	@echo "... edit_cache"
+	@echo "... avg_motors"
+	@echo "... Descriptors.obj"
 	@echo "... Descriptors.i"
 	@echo "... Descriptors.s"
-	@echo "... LUFA/Drivers/USB/Class/Common/HIDParser.o"
+	@echo "... LUFA/Drivers/USB/Class/Common/HIDParser.obj"
 	@echo "... LUFA/Drivers/USB/Class/Common/HIDParser.i"
 	@echo "... LUFA/Drivers/USB/Class/Common/HIDParser.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/AudioClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/AudioClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/AudioClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/AudioClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/CDCClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/CDCClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/CDCClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/CDCClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/HIDClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/HIDClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/HIDClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/HIDClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/MIDIClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/MIDIClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/MIDIClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/MIDIClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/PrinterClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/PrinterClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/PrinterClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/PrinterClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Device/RNDISClassDevice.o"
+	@echo "... LUFA/Drivers/USB/Class/Device/RNDISClassDevice.obj"
 	@echo "... LUFA/Drivers/USB/Class/Device/RNDISClassDevice.i"
 	@echo "... LUFA/Drivers/USB/Class/Device/RNDISClassDevice.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/AudioClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/AudioClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/AudioClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/AudioClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/CDCClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/CDCClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/CDCClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/CDCClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/HIDClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/HIDClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/HIDClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/HIDClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/MIDIClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/MIDIClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/MIDIClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/MIDIClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/MassStorageClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/MassStorageClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/MassStorageClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/MassStorageClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/PrinterClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/PrinterClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/PrinterClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/PrinterClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/RNDISClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/RNDISClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/RNDISClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/RNDISClassHost.s"
-	@echo "... LUFA/Drivers/USB/Class/Host/StillImageClassHost.o"
+	@echo "... LUFA/Drivers/USB/Class/Host/StillImageClassHost.obj"
 	@echo "... LUFA/Drivers/USB/Class/Host/StillImageClassHost.i"
 	@echo "... LUFA/Drivers/USB/Class/Host/StillImageClassHost.s"
-	@echo "... LUFA/Drivers/USB/Core/ConfigDescriptors.o"
+	@echo "... LUFA/Drivers/USB/Core/ConfigDescriptors.obj"
 	@echo "... LUFA/Drivers/USB/Core/ConfigDescriptors.i"
 	@echo "... LUFA/Drivers/USB/Core/ConfigDescriptors.s"
-	@echo "... LUFA/Drivers/USB/Core/DeviceStandardReq.o"
+	@echo "... LUFA/Drivers/USB/Core/DeviceStandardReq.obj"
 	@echo "... LUFA/Drivers/USB/Core/DeviceStandardReq.i"
 	@echo "... LUFA/Drivers/USB/Core/DeviceStandardReq.s"
-	@echo "... LUFA/Drivers/USB/Core/Events.o"
+	@echo "... LUFA/Drivers/USB/Core/Events.obj"
 	@echo "... LUFA/Drivers/USB/Core/Events.i"
 	@echo "... LUFA/Drivers/USB/Core/Events.s"
-	@echo "... LUFA/Drivers/USB/Core/HostStandardReq.o"
+	@echo "... LUFA/Drivers/USB/Core/HostStandardReq.obj"
 	@echo "... LUFA/Drivers/USB/Core/HostStandardReq.i"
 	@echo "... LUFA/Drivers/USB/Core/HostStandardReq.s"
-	@echo "... LUFA/Drivers/USB/Core/USBTask.o"
+	@echo "... LUFA/Drivers/USB/Core/USBTask.obj"
 	@echo "... LUFA/Drivers/USB/Core/USBTask.i"
 	@echo "... LUFA/Drivers/USB/Core/USBTask.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.s"
-	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.o"
+	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.obj"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.i"
 	@echo "... LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.s"
-	@echo "... VirtualSerial.o"
+	@echo "... VirtualSerial.obj"
 	@echo "... VirtualSerial.i"
 	@echo "... VirtualSerial.s"
+	@echo "... gpa_scpi.obj"
+	@echo "... gpa_scpi.i"
+	@echo "... gpa_scpi.s"
+	@echo "... motors.obj"
+	@echo "... motors.i"
+	@echo "... motors.s"
+	@echo "... motors_scpi.obj"
+	@echo "... motors_scpi.i"
+	@echo "... motors_scpi.s"
 .PHONY : help
 
 

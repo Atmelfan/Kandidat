@@ -2,9 +2,9 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8.4)
 SET(CMAKE_SYSTEM_NAME Generic)
 
 #============================================================================================
-PROJECT(avr-clion)
+PROJECT(avr_main)
 
-SET(DEVICE "atxmega32a4u")
+SET(DEVICE "atxmega256a3")
 SET(FREQ "32000000")
 
 #============================================================================================
@@ -13,7 +13,7 @@ add_definitions(-DF_USB=48000000)
 SET(CMAKE_C_COMPILER avr-gcc)
 SET(CMAKE_CXX_COMPILER avr-g++)
 
-SET(CMAKE_C_FLAGS  "-Os -mmcu=${DEVICE} -DF_CPU=${FREQ}UL -std=gnu99 -Wl,--gc-sections -ffunction-sections")
+SET(CMAKE_C_FLAGS  "-Os -mmcu=${DEVICE} -DF_CPU=${FREQ}UL -std=gnu99 -Wl,--gc-sections -ffunction-sections -Wl,-u,vfprintf -lprintf_flt -lm")
 SET(CMAKE_CXX_FLAGS "-Os -mmcu=${DEVICE} -DF_CPU=${FREQ}UL -Wl,--gc-sections")
 
 set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
@@ -23,7 +23,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 #============================================================================================
 
-SET(SOURCE_FILES main.c gpa_scpi.c motors.h motors.c motors_scpi.c motors_scpi.h)
+SET(SOURCE_FILES main.c gpa_scpi.c avg_adc.h avg_adc.c scpi_distance.h scpi_distance.c)
 
 #============================================================================================
 

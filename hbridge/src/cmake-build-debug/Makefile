@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/atmelfan/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named avr-clion
+# Target rules for targets named avr_main
 
 # Build rule for target.
-avr-clion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 avr-clion
-.PHONY : avr-clion
+avr_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 avr_main
+.PHONY : avr_main
 
 # fast build rule for target.
-avr-clion/fast:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/build
-.PHONY : avr-clion/fast
+avr_main/fast:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/build
+.PHONY : avr_main/fast
+
+avg_adc.obj: avg_adc.c.obj
+
+.PHONY : avg_adc.obj
+
+# target to build an object file
+avg_adc.c.obj:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/avg_adc.c.obj
+.PHONY : avg_adc.c.obj
+
+avg_adc.i: avg_adc.c.i
+
+.PHONY : avg_adc.i
+
+# target to preprocess a source file
+avg_adc.c.i:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/avg_adc.c.i
+.PHONY : avg_adc.c.i
+
+avg_adc.s: avg_adc.c.s
+
+.PHONY : avg_adc.s
+
+# target to generate assembly for a file
+avg_adc.c.s:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/avg_adc.c.s
+.PHONY : avg_adc.c.s
 
 gpa_scpi.obj: gpa_scpi.c.obj
 
@@ -129,7 +156,7 @@ gpa_scpi.obj: gpa_scpi.c.obj
 
 # target to build an object file
 gpa_scpi.c.obj:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.obj
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/gpa_scpi.c.obj
 .PHONY : gpa_scpi.c.obj
 
 gpa_scpi.i: gpa_scpi.c.i
@@ -138,7 +165,7 @@ gpa_scpi.i: gpa_scpi.c.i
 
 # target to preprocess a source file
 gpa_scpi.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.i
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/gpa_scpi.c.i
 .PHONY : gpa_scpi.c.i
 
 gpa_scpi.s: gpa_scpi.c.s
@@ -147,7 +174,7 @@ gpa_scpi.s: gpa_scpi.c.s
 
 # target to generate assembly for a file
 gpa_scpi.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/gpa_scpi.c.s
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/gpa_scpi.c.s
 .PHONY : gpa_scpi.c.s
 
 main.obj: main.c.obj
@@ -156,7 +183,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.obj
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -165,7 +192,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.i
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -174,62 +201,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/main.c.s
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/main.c.s
 .PHONY : main.c.s
 
-motors.obj: motors.c.obj
+scpi_distance.obj: scpi_distance.c.obj
 
-.PHONY : motors.obj
-
-# target to build an object file
-motors.c.obj:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.obj
-.PHONY : motors.c.obj
-
-motors.i: motors.c.i
-
-.PHONY : motors.i
-
-# target to preprocess a source file
-motors.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.i
-.PHONY : motors.c.i
-
-motors.s: motors.c.s
-
-.PHONY : motors.s
-
-# target to generate assembly for a file
-motors.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors.c.s
-.PHONY : motors.c.s
-
-motors_scpi.obj: motors_scpi.c.obj
-
-.PHONY : motors_scpi.obj
+.PHONY : scpi_distance.obj
 
 # target to build an object file
-motors_scpi.c.obj:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.obj
-.PHONY : motors_scpi.c.obj
+scpi_distance.c.obj:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.obj
+.PHONY : scpi_distance.c.obj
 
-motors_scpi.i: motors_scpi.c.i
+scpi_distance.i: scpi_distance.c.i
 
-.PHONY : motors_scpi.i
+.PHONY : scpi_distance.i
 
 # target to preprocess a source file
-motors_scpi.c.i:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.i
-.PHONY : motors_scpi.c.i
+scpi_distance.c.i:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.i
+.PHONY : scpi_distance.c.i
 
-motors_scpi.s: motors_scpi.c.s
+scpi_distance.s: scpi_distance.c.s
 
-.PHONY : motors_scpi.s
+.PHONY : scpi_distance.s
 
 # target to generate assembly for a file
-motors_scpi.c.s:
-	$(MAKE) -f CMakeFiles/avr-clion.dir/build.make CMakeFiles/avr-clion.dir/motors_scpi.c.s
-.PHONY : motors_scpi.c.s
+scpi_distance.c.s:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/scpi_distance.c.s
+.PHONY : scpi_distance.c.s
 
 # Help Target
 help:
@@ -237,21 +237,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... avr-clion"
+	@echo "... edit_cache"
+	@echo "... avr_main"
+	@echo "... avg_adc.obj"
+	@echo "... avg_adc.i"
+	@echo "... avg_adc.s"
 	@echo "... gpa_scpi.obj"
 	@echo "... gpa_scpi.i"
 	@echo "... gpa_scpi.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... motors.obj"
-	@echo "... motors.i"
-	@echo "... motors.s"
-	@echo "... motors_scpi.obj"
-	@echo "... motors_scpi.i"
-	@echo "... motors_scpi.s"
+	@echo "... scpi_distance.obj"
+	@echo "... scpi_distance.i"
+	@echo "... scpi_distance.s"
 .PHONY : help
 
 

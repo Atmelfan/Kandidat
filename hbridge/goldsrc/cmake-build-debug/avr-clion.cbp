@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="avr-clion">
-				<Option output="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin"/>
+				<Option output="/media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/goldsrc/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -50,11 +50,11 @@
 					<Add option="-DPID=ffff"/>
 					<Add option="-DARCH=ARCH_XMEGA"/>
 					<Add option="-DBOARD=USER"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/."/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/USB"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/Config"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/."/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/USB"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/Config"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -65,15 +65,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="avr-clion/fast">
-				<Option output="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/bin"/>
+				<Option output="/media/data/kandidat/Kandidat/hbridge/goldsrc/bin/avr-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/data/kandidat/Kandidat/hbridge/goldsrc/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -84,11 +84,11 @@
 					<Add option="-DPID=ffff"/>
 					<Add option="-DARCH=ARCH_XMEGA"/>
 					<Add option="-DBOARD=USER"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/."/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/USB"/>
-					<Add directory="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/Config"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/."/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/Board"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/USB"/>
+					<Add directory="/media/data/kandidat/Kandidat/hbridge/goldsrc/Config"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -99,197 +99,215 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/atmelfan/documents/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 avr-clion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/data/kandidat/Kandidat/hbridge/goldsrc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/Descriptors.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/Descriptors.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/Descriptors.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/Descriptors.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Common/HIDParser.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/AudioClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/CDCClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/HIDClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/AudioClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/CDCClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/HIDClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MIDIClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/PrinterClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/RNDISClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Class/Host/StillImageClassHost.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/ConfigDescriptors.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/DeviceStandardReq.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/Events.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/HostStandardReq.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/USBTask.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Device_XMEGA.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/EndpointStream_XMEGA.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Endpoint_XMEGA.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Host_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/PipeStream_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/Pipe_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBController_XMEGA.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/LUFA/Drivers/USB/Core/XMEGA/USBInterrupt_XMEGA.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/VirtualSerial.c">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/VirtualSerial.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/VirtualSerial.h">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/VirtualSerial.h">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/home/atmelfan/documents/Kandidat/hbridge/goldsrc/CMakeLists.txt">
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/gpa_scpi.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/gpa_scpi.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/motors.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/motors.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/motors_scpi.c">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/motors_scpi.h">
+			<Option target="avr-clion"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/goldsrc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
