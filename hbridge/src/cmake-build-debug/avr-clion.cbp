@@ -95,18 +95,6 @@
 		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/main.c">
 			<Option target="avr-clion"/>
 		</Unit>
-		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors.c">
-			<Option target="avr-clion"/>
-		</Unit>
-		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors.h">
-			<Option target="avr-clion"/>
-		</Unit>
-		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c">
-			<Option target="avr-clion"/>
-		</Unit>
-		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.h">
-			<Option target="avr-clion"/>
-		</Unit>
 		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

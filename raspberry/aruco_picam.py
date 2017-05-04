@@ -77,8 +77,11 @@ if __name__ == '__main__':
         import picamera
         from picamera.array import PiRGBArray
 
-        with picamera.PiCamera(sensor_mode=5, resolution=(args.width, args.height), framerate=24) as camera:
+        with picamera.PiCamera(resolution=(args.width, args.height), framerate=40) as camera:
             print("Actual resolution: %s@mode=%d, framerate=%d" % (str(camera.resolution), camera.sensor_mode, camera.framerate))
+            camera.shutter_speed = int(1e6/camera.framerate)+1
+            print("Actual shutter: %sus, 1/fps=%sus" % (camera.shutter_speed, 1e6/camera.framerate))
+
 
             time.sleep(0.5)
             rawCapture = PiRGBArray(camera)
@@ -100,7 +103,6 @@ if __name__ == '__main__':
                     tot = tot + (t1 - t)
                     if not a:
                         cv2.imwrite('t.jpg', cvimage)
-                        cv2.imwrite('tt.jpg', cvimaget)
 
                         a = True
                     print("dt=%s, at = %f, pt = %f, %s" % (t1 - t, tot/n, t1 - s, aruco_tags))

@@ -6,9 +6,9 @@
 #define SCPI_GPA_SCPI_H
 
 #include "stdlib.h"
-#include "motors_scpi.h"
+#include "scpi_sensors.h"
 
-#define SCPI_IDN "AGV3 Motor Driver v0.1"
+#define SCPI_IDN "AGV3 Main controller v0.1"
 
 struct scpi_command;
 
@@ -27,7 +27,8 @@ typedef struct scpi_command scpi_command;
  * Prints s to console
  * @param s
  */
-extern void scpi_print(const char* s);
+void scpi_println(const char *s);
+extern void scpi_print(const char *s);
 
 
 const char* compare_command(const char* str, const char* command);
@@ -49,18 +50,11 @@ const char* scpi_clear(const char* command);
 
 
 static struct scpi_command scpi_commands[] = {
-    {.name = "CH1", SCPI_DIR, .num_subcommands = 3,
+    {.name = "SENSor", SCPI_DIR, .num_subcommands = 3,
         .subcommands = (scpi_command*) &(scpi_command[]) {
-            {.name="VELocity", .scpi_handler=scpi_motor_setduty1, .scpi_query=scpi_motor_queryduty1, .subcommands = NULL},
-            {.name="DIRection", .scpi_handler=scpi_motor_setdir1, .scpi_query=scpi_query_nyi, .subcommands = NULL},
-            {.name="CURRent", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
-        }
-    },
-    {.name = "CH2", SCPI_DIR, .num_subcommands = 3,
-        .subcommands = (scpi_command*) &(scpi_command[]) {
-            {.name="VELocity", .scpi_handler=scpi_motor_setduty2, .scpi_query=scpi_query_nyi, .subcommands = NULL},
-            {.name="DIRection", .scpi_handler=scpi_motor_setdir2, .scpi_query=scpi_query_nyi, .subcommands = NULL},
-            {.name="CURRent", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
+                {.name="DISTance", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_distance_get0, .subcommands = NULL},
+                {.name="LINe", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_line_get, .subcommands = NULL},
+                {.name="VOLTage", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
         }
     },
     /**
@@ -70,8 +64,8 @@ static struct scpi_command scpi_commands[] = {
      */
     {.name = "SYStem", SCPI_DIR, .num_subcommands = 5,
         .subcommands = (scpi_command*) &(scpi_command[]) {
-            {.name="FREQuency", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
-            {.name="TIMEout", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
+            {.name="DISPlay", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
+            {.name="BUTtons", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
             {.name="STARt", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
             {.name="STOP", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
             {.name="STATus", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},

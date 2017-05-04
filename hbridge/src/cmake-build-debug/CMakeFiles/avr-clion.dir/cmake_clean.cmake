@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/avr-clion.dir/main.c.obj"
   "CMakeFiles/avr-clion.dir/gpa_scpi.c.obj"
-  "CMakeFiles/avr-clion.dir/motors.c.obj"
-  "CMakeFiles/avr-clion.dir/motors_scpi.c.obj"
   "../bin/avr-clion.pdb"
   "../bin/avr-clion"
 )

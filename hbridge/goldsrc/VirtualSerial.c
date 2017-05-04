@@ -34,7 +34,10 @@
  *  the demo and is responsible for the initial application hardware configuration.
  */
 
+#include <stdlib.h>
 #include "VirtualSerial.h"
+#include "gpa_scpi.h"
+#include "motors.h"
 
 /** LUFA CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
@@ -71,6 +74,70 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface =
  */
 static FILE USBSerialStream;
 
+#define SCPI_USART USARTE0
+
+void usart_sendc(char c){
+    while( !(SCPI_USART.STATUS & USART_DREIF_bm) ); //Wait until DATA buffer is empty
+    SCPI_USART.DATA = c;
+    CDC_Device_SendByte(&VirtualSerial_CDC_Interface, (uint8_t)c);
+}
+
+void usart_send(const char* s){
+    while(*s){
+        usart_sendc(*s);
+        s++;
+    }
+}
+
+void usart_int(uint16_t i, uint8_t base){
+    char  buf[16];
+    itoa(i, buf, base);
+    usart_send(buf);
+}
+
+void scpi_print(const char* s){
+    usart_send(s);
+    usart_sendc('\n');
+    usart_sendc('\r');
+
+}
+
+void usart_init(){
+    SCPI_USART.BAUDCTRLB = 0xD0;
+    SCPI_USART.BAUDCTRLA = 131;
+    SCPI_USART.CTRLC = USART_CHSIZE_8BIT_gc;
+    SCPI_USART.CTRLA = USART_RXCINTLVL_LO_gc;
+    SCPI_USART.CTRLB = USART_TXEN_bm | USART_RXEN_bm;
+    PORTE.DIRSET = (1 << 3);
+    PORTE.PIN2CTRL = PORT_OPC_PULLUP_gc;
+}
+
+void spci_newchar(char tmp){
+    static char buf[64];
+    static uint8_t indx = 0;
+    static uint8_t mindx = 0;
+
+    buf[indx] = tmp;
+    if (tmp == '\b' && indx > 0) {
+        indx--;
+        //usart_send("\b \b");
+        return;
+    }
+    //usart_sendc(tmp);//Echo
+    if (tmp == '\r') {
+        buf[indx] = '\0';
+        scpi_execute(buf);
+        indx = mindx = 0;
+    } else if(indx < 63) {
+        indx++;
+        mindx++;
+    }
+}
+
+ISR(USARTE0_RXC_vect) {
+    char tmp = SCPI_USART.DATA;
+    spci_newchar(tmp);
+}
 
 /** Main program entry point. This routine contains the overall program flow, including initial
  *  setup of all components and the main program loop.
@@ -90,9 +157,10 @@ int main(void)
 		CheckJoystickMovement();
 
 		/* Must throw away unused bytes from the host, or it will lock up while waiting for the device */
-		int16_t c = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
-        if(c >= 0){
-            CDC_Device_SendByte(&VirtualSerial_CDC_Interface, (uint8_t)c);
+        while(CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface) > 0)
+        {
+            char c = (char)CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
+            spci_newchar(c);
         }
 
 		CDC_Device_USBTask(&VirtualSerial_CDC_Interface);
@@ -112,8 +180,17 @@ void SetupHardware(void)
 	XMEGACLK_StartDFLL(CLOCK_SRC_INT_RC32MHZ, DFLL_REF_INT_USBSOF, F_USB);
 
 	PMIC.CTRL = PMIC_LOLVLEN_bm | PMIC_MEDLVLEN_bm | PMIC_HILVLEN_bm;
+    sei();
+    usart_init();
+    usart_send("Hello world!\n\r");
+
+    motors_init();
+    motors_start(0);
+    motors_set_duty(0, MOTORS_PERIOD); motors_set_dir(0, MOTOR_FORW);
+    motors_set_duty(1, MOTORS_PERIOD); motors_set_dir(1, MOTOR_FORW);
 
 	USB_Init();
+
 }
 
 /** Checks for changes in the position of the board joystick, sending strings to the host upon each change. */

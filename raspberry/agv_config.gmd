@@ -3,3 +3,10 @@ picamera:
     sensor_mode 0
     framerate 24
 end
+
+stations:
+    0 32 "STATION_A0" #station 0/A
+    1 33 "STATION_B1" #station 1/B
+    2 34 "STATION_C2" #station 2/C
+    3 35 "STATION_D3" #station 3/D
+end
