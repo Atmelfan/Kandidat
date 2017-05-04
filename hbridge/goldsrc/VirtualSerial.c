@@ -97,8 +97,8 @@ void usart_int(uint16_t i, uint8_t base){
 
 void scpi_print(const char* s){
     usart_send(s);
-    usart_sendc('\n');
     usart_sendc('\r');
+    usart_sendc('\n');
 
 }
 
@@ -182,7 +182,7 @@ void SetupHardware(void)
 	PMIC.CTRL = PMIC_LOLVLEN_bm | PMIC_MEDLVLEN_bm | PMIC_HILVLEN_bm;
     sei();
     usart_init();
-    usart_send("Hello world!\n\r");
+    //usart_send("Hello world!\n\r");
 
     motors_init();
     motors_start(0);

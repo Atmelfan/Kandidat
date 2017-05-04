@@ -1,4 +1,4 @@
-
+from agv_linefollow import LineMode
 
 
 class AGVState(object):
@@ -8,11 +8,20 @@ class AGVState(object):
     def get_name(self):
         return "???"
 
+    def start(self):
+        pass
+
     def update(self):
+        return None
+
+    def stop(self):
         pass
 
     def override(self, next_state):
         pass
+
+    def line_mode(self):
+        return LineMode.DISABLE
 
 class AGVStateFault(AGVState):
     def __init__(self, msg = "MissingNo?"):
@@ -21,5 +30,3 @@ class AGVStateFault(AGVState):
     def get_name(self):
         return "FAULT: %s"
 
-    def update(self):
-        pass
