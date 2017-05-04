@@ -3,18 +3,7 @@
 
 CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: ../gpa_scpi.c
 CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: ../gpa_scpi.h
-CMakeFiles/avr-clion.dir/gpa_scpi.c.obj: ../motors_scpi.h
 
 CMakeFiles/avr-clion.dir/main.c.obj: ../gpa_scpi.h
 CMakeFiles/avr-clion.dir/main.c.obj: ../main.c
-CMakeFiles/avr-clion.dir/main.c.obj: ../motors.h
-CMakeFiles/avr-clion.dir/main.c.obj: ../motors_scpi.h
-
-CMakeFiles/avr-clion.dir/motors.c.obj: ../motors.c
-CMakeFiles/avr-clion.dir/motors.c.obj: ../motors.h
-
-CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../gpa_scpi.h
-CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../motors.h
-CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../motors_scpi.c
-CMakeFiles/avr-clion.dir/motors_scpi.c.obj: ../motors_scpi.h
 

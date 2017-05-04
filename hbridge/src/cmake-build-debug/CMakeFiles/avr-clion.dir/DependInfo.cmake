@@ -6,8 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/gpa_scpi.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/main.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/main.c.obj"
-  "/media/data/kandidat/Kandidat/hbridge/src/motors.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/motors.c.obj"
-  "/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir/motors_scpi.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

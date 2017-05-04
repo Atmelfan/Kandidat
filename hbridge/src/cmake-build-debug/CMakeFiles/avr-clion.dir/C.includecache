@@ -17,8 +17,6 @@ ctype.h
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
 stdlib.h
 /media/data/kandidat/Kandidat/hbridge/src/stdlib.h
-motors_scpi.h
-/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.h
 
 /media/data/kandidat/Kandidat/hbridge/src/main.c
 avr/io.h
@@ -29,34 +27,4 @@ stdlib.h
 -
 gpa_scpi.h
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
-motors.h
-/media/data/kandidat/Kandidat/hbridge/src/motors.h
-
-/media/data/kandidat/Kandidat/hbridge/src/motors.c
-stdint.h
--
-avr/io.h
--
-motors.h
-/media/data/kandidat/Kandidat/hbridge/src/motors.h
-
-/media/data/kandidat/Kandidat/hbridge/src/motors.h
-stdint.h
--
-
-/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.c
-stdlib.h
--
-string.h
--
-ctype.h
--
-avr/io.h
--
-motors.h
-/media/data/kandidat/Kandidat/hbridge/src/motors.h
-gpa_scpi.h
-/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
-
-/media/data/kandidat/Kandidat/hbridge/src/motors_scpi.h
 

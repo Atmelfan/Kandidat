@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8.4)
 SET(CMAKE_SYSTEM_NAME Generic)
 
 #============================================================================================
-PROJECT(avr-clion)
+PROJECT(avg_motors)
 
 ADD_DEFINITIONS(-DARCH=XMEGA)
 ADD_DEFINITIONS(-DF_USB=48000000)
@@ -87,6 +87,9 @@ set(USB_SRC_FILES
 set(SOURCE_FILES
             VirtualSerial.c
             Descriptors.c
+            gpa_scpi.c
+            motors.c
+            motors_scpi.c
 
             ${USB_SRC_FILES}
         )

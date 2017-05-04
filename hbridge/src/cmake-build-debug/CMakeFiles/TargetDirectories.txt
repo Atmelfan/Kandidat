@@ -1,3 +1,3 @@
-/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/edit_cache.dir
 /media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr-clion.dir
+/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir

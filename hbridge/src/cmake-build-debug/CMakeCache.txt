@@ -121,7 +121,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=avr-clion
+CMAKE_PROJECT_NAME:STATIC=avr_main
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -183,6 +183,12 @@ avr-clion_BINARY_DIR:STATIC=/media/data/kandidat/Kandidat/hbridge/src/cmake-buil
 
 //Value Computed by CMake
 avr-clion_SOURCE_DIR:STATIC=/media/data/kandidat/Kandidat/hbridge/src
+
+//Value Computed by CMake
+avr_main_BINARY_DIR:STATIC=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug
+
+//Value Computed by CMake
+avr_main_SOURCE_DIR:STATIC=/media/data/kandidat/Kandidat/hbridge/src
 
 
 ########################
