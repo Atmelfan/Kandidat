@@ -1,0 +1,94 @@
+Removed Pin From Net: NetName=VBAT Pin=J5-1
+Removed Pin From Net: NetName=VBAT Pin=Q1_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q1_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H1-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H2-3
+Removed Pin From Net: NetName=VBAT Pin=Q2_H2-3
+Removed Pin From Net: NetName=VBAT Pin=R20-1
+Added Component: Designator=C3(CAPC1608X08M)
+Added Component: Designator=C22(CAPC3216X14M)
+Added Component: Designator=C23(CAPC3216X14M)
+Added Component: Designator=D4(SOT23)
+Added Component: Designator=L1(INDC3924X34M)
+Added Component: Designator=R1(RESC1608X06M)
+Added Component: Designator=R2(RESC1608X06M)
+Added Component: Designator=U6(AGV_SO-8)
+Added Pin To Net: NetName=VBAT Pin=C23-2
+Added Pin To Net: NetName=VBAT Pin=L1-2
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=VBAT Pin=R2-2
+Change Net Name : Old Net Name=NetJ4_3 New Net Name=RX
+Change Net Name : Old Net Name=NetJ4_4 New Net Name=TX
+Change Net Name : Old Net Name=VBAT New Net Name=12V
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=D4-3
+Added Pin To Net: NetName=NetC3_1 Pin=L1-1
+Added Pin To Net: NetName=NetC3_1 Pin=U6-8
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=U6-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC22_1 Pin=C22-1
+Added Pin To Net: NetName=NetC22_1 Pin=C23-1
+Added Pin To Net: NetName=NetC22_1 Pin=D4-1
+Added Pin To Net: NetName=NetC22_1 Pin=D4-2
+Added Pin To Net: NetName=NetC22_1 Pin=U6-6
+Added Net: Name=NetC22_1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_2 Pin=U6-4
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=VBAT Pin=C22-2
+Added Pin To Net: NetName=VBAT Pin=J5-1
+Added Pin To Net: NetName=VBAT Pin=Q1_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q1_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H1-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H2-3
+Added Pin To Net: NetName=VBAT Pin=Q2_H2-3
+Added Pin To Net: NetName=VBAT Pin=R20-1
+Added Pin To Net: NetName=VBAT Pin=U6-7
+Added Net: Name=VBAT
+Added Member To Class: ClassName=PSU Member=Component C3 CAP
+Added Member To Class: ClassName=PSU Member=Component C22 CAP
+Added Member To Class: ClassName=PSU Member=Component C23 CAP
+Added Member To Class: ClassName=PSU Member=Component D4 BAS40-05
+Added Member To Class: ClassName=PSU Member=Component L1 IND
+Added Member To Class: ClassName=PSU Member=Component R1 RES
+Added Member To Class: ClassName=PSU Member=Component R2 RES
+Added Member To Class: ClassName=PSU Member=Component U6 LM2671M-ADJ
+Added Room: Name=PSU
+Added Rule: Name=Schematic Width Constraint
+Added Rule: Name=Schematic Width Constraint_1
+Added Rule: Name=Schematic Width Constraint_2
+Added Rule: Name=Schematic Width Constraint_4
+Added Rule: Name=Schematic Width Constraint_5
