@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=NetJ2_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ2_1 Pin=J3-1
+Change Net Name : Old Net Name=NetJ2_1 New Net Name=NetJ1_1
+Added Room: Name=passenger
