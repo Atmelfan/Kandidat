@@ -59,43 +59,51 @@ def detect_and_cal_tags(a_image, focal_length=WEBCAM_FOCAL_LENGTH):
 
 class AGVCamera(Thread):
     resolution = 0,0
+    tags=[]
+    pi_camera=None
 
-    def __init__(self, resolution=(720, 480)):
+    def __init__(self, resolution=(1640, 922)):
         super(AGVCamera, self).__init__(daemon=True)
         self.resolution = resolution
+        print("[CAMERA] Starting camera...")
+        self.pi_camera = picamera.PiCamera(sensor_mode=5, resolution=self.resolution, framerate=40)
+        print("[CAMERA] Actual resolution: %s@mode=%d, framerate=%d" % (
+        str(self.pi_camera.resolution), self.pi_camera.sensor_mode, self.pi_camera.framerate))
+        self.pi_camera.shutter_speed = int(1e6 / self.pi_camera.framerate) + 1
+        print("[CAMERA] Actual shutter: %sus, 1/fps=%sus" % (
+        self.pi_camera.shutter_speed, 1e6 / self.pi_camera.framerate))
+        time.sleep(0.5)
+        self.start()
+
+    def get_tags(self):
+        return self.tags
 
     def run(self):
-        with picamera.PiCamera(sensor_mode=5, resolution=(1640, 922), framerate=2) as camera:
-            print("Actual resolution: %s@mode=%d, framerate=%d" % (
-            str(camera.resolution), camera.sensor_mode, camera.framerate))
-            camera.shutter_speed = int(1e6 / camera.framerate) + 1
-            print("Actual shutter: %sus, 1/fps=%sus" % (camera.shutter_speed, 1e6 / camera.framerate))
-
-            time.sleep(0.5)
-            rawCapture = PiRGBArray(camera)
-            rawCapture.truncate(0)
-            # camera.start_preview()
-            t = time.time()
-            n = 1
-            tot = 0
-            try:
-                for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-                    s = time.time()
-                    cvimage = frame.array
-                    cvimaget = cv2.resize(cvimage, None, fx=0.5, fy=0.5)
-                    # cvimaget = cv2.cvtColor(cvimaget, cv2.COLOR_BGR2GRAY) # no performance gain
-                    aruco_tags = detect_and_cal_tags(cvimaget, RASPICAM_FOCAL_LENGTH)
-                    rawCapture.truncate(0)
-                    t1 = time.time()
-                    tot = tot + (t1 - t)
-                    print("dt=%s, at = %f, pt = %f, %s" % (t1 - t, tot / n, t1 - s, aruco_tags))
-                    t = t1
-                    n = n + 1
+        rawCapture = PiRGBArray(self.pi_camera)
+        rawCapture.truncate(0)
+        # camera.start_preview()
+        t = time.time()
+        n = 1
+        tot = 0
+        try:
+            for frame in self.pi_camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+                s = time.time()
+                cvimage = frame.array
+                cvimaget = cv2.resize(cvimage, None, fx=0.5, fy=0.5)
+                # cvimaget = cv2.cvtColor(cvimaget, cv2.COLOR_BGR2GRAY) # no performance gain
+                aruco_tags = detect_and_cal_tags(cvimaget, RASPICAM_FOCAL_LENGTH)
+                rawCapture.truncate(0)
+                t1 = time.time()
+                tot = tot + (t1 - t)
+                #if aruco_tags:
+                    #print("dt=%s, at = %f, pt = %f, %s" % (t1 - t, tot / n, t1 - s, aruco_tags))
+                self.tags = aruco_tags
+                t = t1
+                n = n + 1
 
 
-            except KeyboardInterrupt:
-                pass
-            finally:
-                # camera.stop_preview()
-                pass
-        pass
+        except KeyboardInterrupt:
+            pass
+        finally:
+            # camera.stop_preview()
+            pass

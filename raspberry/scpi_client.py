@@ -11,11 +11,11 @@ class ScpiClient(object):
             self.stream = stream
 
         if not self.stream.is_open:
-            raise ConnectionError("Failed to connect!")
+            raise ConnectionError("[SCPI] Failed to connect!")
         id = self.idn()
         if not id:
-            raise ConnectionError("Failed to query *IDN!")
-        print("Connected to %s!" % id)
+            raise ConnectionError("[SCPI] Failed to query *IDN!")
+        print("[SCPI] Connected to %s!" % id)
 
     def send(self, cmd, n=1):
         self.stream.write(cmd + b"\r\n")

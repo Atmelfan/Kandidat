@@ -13,7 +13,8 @@ class AGVSensors(Thread):
         super(AGVSensors, self).__init__(daemon=True)
         self.main=ScpiClient("/dev/ttyS0")
         idn = self.main.idn()
-        print("Found sensors! (%s)" % idn)
+        print("[SENSORS] Found sensors! (%s)" % idn)
+        self.start()
 
     def get_distance(self):
         return 0.0
@@ -29,7 +30,7 @@ class AGVSensors(Thread):
 
     def get_lline(self):
         try:
-            return self.realline[::-1].index(True)
+            return 7 - self.realline[::-1].index(True)
         except ValueError:
             return -1
 
@@ -42,7 +43,7 @@ class AGVSensors(Thread):
             line = [float(s) > 0.75 for s in line.split()]
             if any(line):
                 self.realline = [line[3], line[0], line[1], line[2], line[4], line[6], line[7], line[5]]
-            print(self.realline)
+            #print(self.realline)
             time.sleep(0.1)
 
 
