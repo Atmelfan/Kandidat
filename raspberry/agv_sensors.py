@@ -6,8 +6,6 @@ from scpi_client import ScpiClient
 
 
 class AGVSensors(Thread):
-    main = None
-    realline = []
 
     def __init__(self):
         super(AGVSensors, self).__init__(daemon=True)
@@ -15,6 +13,7 @@ class AGVSensors(Thread):
         idn = self.main.idn()
         print("[SENSORS] Found sensors! (%s)" % idn)
         self.start()
+        self.realline = [False for x in range(0, 8)]
 
     def get_distance(self):
         return 0.0
@@ -38,6 +37,7 @@ class AGVSensors(Thread):
         return 0.0
 
     def run(self):
+        print("[SENSORS] Started...")
         while True:
             line, dist = self.main[b"SENS:LINE?;DIST?"]
             line = [float(s) > 0.75 for s in line.split()]

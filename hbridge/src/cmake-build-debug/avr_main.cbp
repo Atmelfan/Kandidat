@@ -92,6 +92,12 @@
 		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/avg_adc.h">
 			<Option target="avr_main"/>
 		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/blinkers.c">
+			<Option target="avr_main"/>
+		</Unit>
+		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/blinkers.h">
+			<Option target="avr_main"/>
+		</Unit>
 		<Unit filename="/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c">
 			<Option target="avr_main"/>
 		</Unit>

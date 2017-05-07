@@ -150,6 +150,33 @@ avg_adc.c.s:
 	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/avg_adc.c.s
 .PHONY : avg_adc.c.s
 
+blinkers.obj: blinkers.c.obj
+
+.PHONY : blinkers.obj
+
+# target to build an object file
+blinkers.c.obj:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/blinkers.c.obj
+.PHONY : blinkers.c.obj
+
+blinkers.i: blinkers.c.i
+
+.PHONY : blinkers.i
+
+# target to preprocess a source file
+blinkers.c.i:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/blinkers.c.i
+.PHONY : blinkers.c.i
+
+blinkers.s: blinkers.c.s
+
+.PHONY : blinkers.s
+
+# target to generate assembly for a file
+blinkers.c.s:
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/blinkers.c.s
+.PHONY : blinkers.c.s
+
 gpa_scpi.obj: gpa_scpi.c.obj
 
 .PHONY : gpa_scpi.obj
@@ -243,6 +270,9 @@ help:
 	@echo "... avg_adc.obj"
 	@echo "... avg_adc.i"
 	@echo "... avg_adc.s"
+	@echo "... blinkers.obj"
+	@echo "... blinkers.i"
+	@echo "... blinkers.s"
 	@echo "... gpa_scpi.obj"
 	@echo "... gpa_scpi.i"
 	@echo "... gpa_scpi.s"

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/avr_main.dir/gpa_scpi.c.obj"
   "CMakeFiles/avr_main.dir/avg_adc.c.obj"
   "CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
+  "CMakeFiles/avr_main.dir/blinkers.c.obj"
   "../bin/avr_main.pdb"
   "../bin/avr_main"
 )

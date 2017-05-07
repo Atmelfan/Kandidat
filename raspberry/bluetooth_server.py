@@ -5,18 +5,15 @@ from bluetooth import *
 
 
 class BluetoothServer(Thread):
-    port = 0
-    uuid = ""
-    name = ""
-    socket = None
 
-    def __init__(self, name, uuid = "00001101-0000-1000-8000-00805f9b34fb", port = PORT_ANY):
+    def __init__(self, name, scpi_server, uuid="00001101-0000-1000-8000-00805f9b34fb", port=PORT_ANY):
         Thread.__init__(self)
         self.name = name
         self.uuid = uuid
         self.socket = BluetoothSocket(RFCOMM)
         self.socket.bind(("", port))
         self.socket.listen(1)
+        self.scpi_server = scpi_server
         #self.port = self.socket.port
 
         self.port = self.socket.getsockname()[1]
@@ -48,15 +45,31 @@ class BluetoothServer(Thread):
         return tmp
 
     def run(self):
-
+        print("[BLUETOOTH] Waiting for client...")
+        client_sock, client_info = self.socket.accept()
+        print("[BLUETOOTH] Accepted connection from ", client_info)
         try:
             while True:
-                data = get_string(self.socket)
-                if len(data) == 0: break
-                print("received [%s]" % data)
-                self.socket.send(b"OK\r\n")
+                data = get_string(client_sock)
+                if len(data) == 0:
+                    break
+
+                print(">> %s" % data)
+
+                s = data.decode()
+                returns = self.scpi_server.execute(s)
+                print("<< %s" % returns.encode())
+
+                client_sock.send(returns.encode())
         except Exception as e:
-            print("[BLUETOOTH %s] Unexpected error: %s" % (self.getName(), e),)
+            print("[BLUETOOTH %s] Unexpected error: %s" % (self.getName(), e))
+        finally:
+            client_sock.close()
+            self.socket.close()
+
+
+    def send_line(self, s):
+        self.socket.send((s+"\r\n").encode())
 
 
 def get_string(client):

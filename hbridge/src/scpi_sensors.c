@@ -28,9 +28,10 @@ const char *scpi_line_get(const char *command) {
         PORTF.OUTCLR = 0x07 << 5;
         PORTF.OUTSET = x;
         _delay_ms(1);
-        sprintf(buf, "%f ", ADC_TO_VOLTAGE(adc_read(6)));
+        sprintf(buf, "%u ", adc_read(6));
         scpi_print(buf);
     }
     scpi_print("\r\n");
     return scpi_nop(command);
 }
+//nav:start;pick 0 5

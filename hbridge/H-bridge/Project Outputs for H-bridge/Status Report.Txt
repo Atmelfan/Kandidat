@@ -9,17 +9,7 @@ From  : Variant [[No Variations]] of Project [H-bridge.PrjPcb]
    Generated File[features]
    Generated File[features]
    Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
    Generated File[tools]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
    Generated File[features]
    Generated File[features]
    Generated File[components]
@@ -30,7 +20,7 @@ From  : Variant [[No Variations]] of Project [H-bridge.PrjPcb]
    Generated File[hbridge.REP]
 
 
-Files Generated   : 27
+Files Generated   : 17
 Documents Printed : 0
 
-Finished Output Generation At 17:30:19 On 2017-03-30
+Finished Output Generation At 10:11:11 On 2017-05-05

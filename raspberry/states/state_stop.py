@@ -3,12 +3,8 @@ from states.agv_state import AGVState
 
 
 class AGVStateStop(AGVState):
-    def __init__(self):
-        super(AGVStateStop, self).__init__()
-
-    def update(self, tags, line):
-
-        return AGVStateStart()
+    def __init__(self, datastore):
+        super(AGVStateStop, self).__init__(datastore)
 
     def get_name(self):
         return "STOP"
