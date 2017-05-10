@@ -55,7 +55,7 @@ class ScpiServer(object):
         if scmd[-1] == '?':
             read = True
             scmd = scmd[:-1]
-        print("%s %s %s"%(cmd, scmd, read))
+        # print("%s %s %s"%(cmd, scmd, read))
         # reset parent id if begins commands with :
         if scmd[0] == ':':
             scmd = scmd[1:]

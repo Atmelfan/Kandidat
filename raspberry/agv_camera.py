@@ -8,23 +8,26 @@ import math
 import picamera
 from picamera.array import PiRGBArray
 
+from agv_signs import AGVSigns
 
 aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
 parameters = aruco.DetectorParameters_create()
 
-ARUCO_TAG_HEIGHT = 25
-ARUCO_TAG_WIDTH = 25
+ARUCO_TAG_HEIGHT = 40
+ARUCO_REG_HEIGHT = 20
+
+
 
 # Focal length = (Pixels x Distance) / Size
 WEBCAM_FOCAL_LENGTH = 1
-RASPICAM_FOCAL_LENGTH = 1
+RASPICAM_FOCAL_LENGTH = 680.0
 POTATO_FOCAL_LENGTH = 1
 
 
 #
 #
-def get_distance(height, fl):
-    return (ARUCO_TAG_HEIGHT * fl) / height
+def get_distance(height, xid, fl):
+    return (ARUCO_REG_HEIGHT if AGVSigns.get_type(xid) == AGVSigns.TYPE_REGISTRATION else ARUCO_TAG_HEIGHT) * fl / height
 
 
 # find_middle(tag_corners)
@@ -48,7 +51,7 @@ def detect_and_cal_tags(a_image, focal_length=WEBCAM_FOCAL_LENGTH):
             xid = ids[x][0]
             # print(corners[x][0])
             xx, xy, w, h = find_middle(corners[x][0])
-            d = get_distance(h, focal_length)
+            d = get_distance(h, xid, focal_length)
             a = 0 #math.acos(w / ARUCO_TAG_WIDTH)
             tags.append((xid, xx, xy, d, a))
             # tags.append({'id': xid, 'x': xx, 'y': xy, 'distance': d, 'angle': a})
@@ -58,7 +61,7 @@ def detect_and_cal_tags(a_image, focal_length=WEBCAM_FOCAL_LENGTH):
 
 
 class AGVCamera(Thread):
-    resolution = 0,0
+    resolution = 0, 0
     tags=[]
     pi_camera=None
 

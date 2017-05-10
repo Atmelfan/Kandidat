@@ -52,6 +52,7 @@ void setup(){
     usart_init();
     //usart_send("Hello world!\r\n");
     adc_init();
+    PORTA.DIRSET = 0x01;
 }
 volatile uint8_t do_process = 0;
 volatile static char buf[64];
@@ -62,7 +63,7 @@ void update(){
     if(do_process){
         scpi_execute((char*)buf);
         do_process = 0;
-
+        PORTA.OUTTGL = 0x01;
     }
     //_delay_ms(100);
 }

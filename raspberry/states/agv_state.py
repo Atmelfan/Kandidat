@@ -4,6 +4,16 @@ from agv_linefollow import LineMode
 from agv_signs import AGVSigns
 
 
+def get_closest_tag(tags):
+    if not tags:
+        return None
+    return min(tags, key=lambda t: t[3])
+
+
+def get_agvs(tags):
+    return [t for t in tags if AGVSigns.get_type(t[0]) == AGVSigns.TYPE_REGISTRATION]
+
+
 class AGVState(object):
     def __init__(self, datastore):
         super(AGVState, self).__init__()
@@ -45,6 +55,9 @@ class AGVState(object):
     def log(self):
         return "%s" % self.get_name()
 
+    def speed_factor(self):
+        return 1.0
+
 
 class AGVStateFault(AGVState):
     def __init__(self, msg = "MissingNo?"):
@@ -58,6 +71,10 @@ class AGVStateStop(AGVState):
     def __init__(self, datastore):
         super(AGVStateStop, self).__init__(datastore)
 
+    def update(self, tags, line):
+        #print("Closest %s; agvs: %s" % (get_closest_tag(tags), get_agvs(tags)))
+        return super().update(tags, line)
+
     def get_name(self):
         return "STOP"
 
@@ -65,15 +82,18 @@ class AGVStateStop(AGVState):
 class AGVStateFollow(AGVState):
     def __init__(self, datastore):
         super(AGVStateFollow, self).__init__(datastore)
+        self.front = -1
 
     def get_name(self):
-        return "FOLLOW"
+        return "LEADING" if self.datastore["lead"] else "FOLLOWING %d" % self.front
 
     def update(self, tags, line):
         station = self.datastore['station']
         drop = self.datastore['drop']
+        closest_agv = get_closest_tag(get_agvs(tags))
+        self.front = closest_agv[0] if closest_agv else -1
         #print("%02x" % AGVSigns.make_id(AGVSigns.TYPE_STATION_ENTER, station))
-        if drop != 0 and station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_ENTER, station) for tag in tags):
+        if drop != 0 and station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_ENTER, station) and tag[3] < 1000 for tag in tags):
             print("Found my runway!")
             return AGVStateStationEnter(self.datastore)
         return super().update(tags, line)
@@ -81,17 +101,8 @@ class AGVStateFollow(AGVState):
     def line_mode(self):
         return LineMode.KEEP_LEFT
 
-#nav:start;pick 0 1
-    def log(self):
-        return "%s %d" % (self.get_name(), 0)
-
-
-class AGVStateLead(AGVState):
-    def __init__(self, datastore):
-        super(AGVStateLead, self).__init__(datastore)
-
-    def get_name(self):
-        return "LEAD"
+    def speed_factor(self):
+        return 0.5 if self.datastore["lead"] else super().speed_factor()
 
 
 class AGVStateStart(AGVState):
@@ -118,7 +129,7 @@ class AGVStateStationEnter(AGVState):
         #print("UPDATE!")
         station = self.datastore['station']
         #print("%02x"%station)
-        if station != -1 and any(tag[0] == 0xD0 for tag in tags):
+        if station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_STOP, station) and tag[3] < 1000 for tag in tags):
             print("Found my stop!")
             return AGVStateStationStop(self.datastore)
         return super().update(tags, line)
@@ -129,14 +140,17 @@ class AGVStateStationEnter(AGVState):
     def line_mode(self):
         return LineMode.KEEP_RIGHT
 
+    def speed_factor(self):
+        return 0.4
+
 
 class AGVStateStationExit(AGVState):
     def __init__(self, datastore):
         super(AGVStateStationExit, self).__init__(datastore)
 
     def update(self, tags, line):
-        station = self.datastore['station']
-        if station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_EXIT, station) for tag in tags):
+        closest_agv = get_agvs(tags)
+        if closest_agv:
             return AGVStateFollow(self.datastore)
         return super().update(tags, line)
 
@@ -144,10 +158,13 @@ class AGVStateStationExit(AGVState):
         return "STATION EXIT"
 
     def line_mode(self):
-        return LineMode.KEEP_LEFT
+        return LineMode.DISABLE
 
+    def speed_factor(self):
+        return 0.4
 
 TIME_TO_WAIT = 5
+
 
 class AGVStateStationStop(AGVState):
     def __init__(self, datastore):
@@ -156,10 +173,10 @@ class AGVStateStationStop(AGVState):
         passengers = datastore['passengers']
         old = passengers
         drop = datastore['drop']
-        if drop < 0:#pick up
+        if drop < 0:# pick up
             passengers -= drop
             drop = 0
-        else: #drop off
+        else: # drop off
             amount = min(passengers, drop)
             passengers -= amount
             drop -= amount
@@ -169,7 +186,8 @@ class AGVStateStationStop(AGVState):
         print("Dropped off %d of %d passengers" % (old - passengers, old))
 
     def update(self, tags, line):
-        if time.time() - self.t > TIME_TO_WAIT:
+        station = self.datastore['station']
+        if station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_EXIT, station) and tag[3] < 1000 for tag in tags):
             return AGVStateStationExit(self.datastore)
         return super().update(tags, line)
 
@@ -177,7 +195,10 @@ class AGVStateStationStop(AGVState):
         return "STATION STOP"
 
     def line_mode(self):
-        return LineMode.DISABLE
+        return LineMode.KEEP_LEFT if time.time() - self.t > TIME_TO_WAIT else LineMode.DISABLE
+
+    def speed_factor(self):
+        return 0.4
 
 
 

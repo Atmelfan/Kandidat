@@ -82,8 +82,8 @@
       <file leaf-file-name="motors_scpi.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/motors_scpi.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="e#44#63#0" expanded="true" />
               </folding>
@@ -464,11 +464,14 @@
       <workItem from="1493375408206" duration="60000" />
       <workItem from="1493397231417" duration="798000" />
       <workItem from="1494173134391" duration="9000" />
+      <workItem from="1494330624407" duration="113000" />
+      <workItem from="1494334154529" duration="22000" />
+      <workItem from="1494340262683" duration="424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19034000" />
+    <option name="totallyTimeSpent" value="19593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-11" width="1855" height="1092" extended-state="6" />
@@ -896,8 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/motors_scpi.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="360">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#44#63#0" expanded="true" />
           </folding>

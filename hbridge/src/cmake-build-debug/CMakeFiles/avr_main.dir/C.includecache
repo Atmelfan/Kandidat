@@ -16,6 +16,8 @@ avr/pgmspace.h
 avr/io.h
 -
 
+/media/data/kandidat/Kandidat/hbridge/src/blinkers.c
+
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c
 gpa_scpi.h
 /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h
