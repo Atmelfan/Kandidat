@@ -2,7 +2,6 @@ import serial
 
 
 class ScpiClient(object):
-    stream = None
 
     def __init__(self, stream, baudrate=115200, timeout=0.5):
         if isinstance(stream, str):
@@ -19,6 +18,8 @@ class ScpiClient(object):
 
     def send(self, cmd, n=1):
         self.stream.write(cmd + b"\r\n")
+        self.stream.flush()
+
         results=[]
         for i in range(0, n):
             results.append(self.stream.readline())

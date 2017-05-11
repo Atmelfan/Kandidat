@@ -83,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/motors_scpi.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="e#44#63#0" expanded="true" />
               </folding>
@@ -467,11 +467,12 @@
       <workItem from="1494330624407" duration="113000" />
       <workItem from="1494334154529" duration="22000" />
       <workItem from="1494340262683" duration="424000" />
+      <workItem from="1494490687925" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19593000" />
+    <option name="totallyTimeSpent" value="19665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-11" width="1855" height="1092" extended-state="6" />
@@ -900,7 +901,7 @@
     <entry file="file://$PROJECT_DIR$/motors_scpi.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#44#63#0" expanded="true" />
           </folding>

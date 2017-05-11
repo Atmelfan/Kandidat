@@ -46,7 +46,7 @@ class AGVState(object):
     def stop(self):
         print("State %s stopped!" % self.get_name())
 
-    def override(self, next_state):
+    def override(self, tags, sensors, motors):
         pass
 
     def line_mode(self):
@@ -57,6 +57,7 @@ class AGVState(object):
 
     def speed_factor(self):
         return 1.0
+
 
 
 class AGVStateFault(AGVState):
@@ -108,14 +109,56 @@ class AGVStateFollow(AGVState):
 class AGVStateStart(AGVState):
     def __init__(self, datastore):
         super(AGVStateStart, self).__init__(datastore)
+        self.has_line = False
+        self.finished = False
+        self.t = 0.0
 
     def update(self, tags, line):
-        if any(line):
+        if any(line.get_actual_line()) and not self.has_line:
+            self.t = time.time()
+            self.has_line = True
+        if self.finished:
+            return AGVStateStart2(self.datastore)
+        return super().update(tags, line)
+
+    def get_name(self):
+        return "START"
+
+    def override(self, tags, sensors, motors):
+        if time.time() - self.t < 1.0:
+            motors.send(("ch1:dir %s; vel %d\n\r" % ("FORW", 500)).encode(), 0)
+            motors.send(("ch2:dir %s; vel %d\n\r" % ("BACK", 500)).encode(), 0)
+        else:
+            motors.send(("ch1:dir %s; vel %d\n\r" % ("BACK", 0)).encode(), 0)
+            motors.send(("ch2:dir %s; vel %d\n\r" % ("BACK", 0)).encode(), 0)
+            self.finished = True
+
+        super().override(tags, sensors, motors)
+
+    def speed_factor(self):
+        return 0.25
+
+    def line_mode(self):
+        return LineMode.KEEP_STRAIGHT if not self.has_line else LineMode.OVERRIDE
+
+
+class AGVStateStart2(AGVState):
+    def __init__(self, datastore):
+        super(AGVStateStart2, self).__init__(datastore)
+        self.has_line = False
+        self.finished = False
+        self.t = 0.0
+
+    def update(self, tags, line):
+        if line.get_actual_line()[7]:
             return AGVStateFollow(self.datastore)
         return super().update(tags, line)
 
     def get_name(self):
         return "START"
+
+    def speed_factor(self):
+        return 0.25
 
     def line_mode(self):
         return LineMode.KEEP_STRAIGHT
@@ -187,8 +230,10 @@ class AGVStateStationStop(AGVState):
 
     def update(self, tags, line):
         station = self.datastore['station']
-        if station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_EXIT, station) and tag[3] < 1000 for tag in tags):
+        if line.get_linewidth() > 4:
             return AGVStateStationExit(self.datastore)
+        #if station != -1 and any(tag[0] == AGVSigns.make_id(AGVSigns.TYPE_STATION_EXIT, station) and tag[3] < 1000 for tag in tags):
+        #    return AGVStateStationExit(self.datastore)
         return super().update(tags, line)
 
     def get_name(self):

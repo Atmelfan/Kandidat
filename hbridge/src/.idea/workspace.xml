@@ -12,26 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3bbbd5a-d19b-48c7-b2a4-4f0d6df456fe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/avr_main.hex" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/avr_main" afterPath="$PROJECT_DIR$/bin/avr_main" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/gpa_scpi.c.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/gpa_scpi.c.obj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/main.c.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/main.c.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/scpi_sensors.c.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/scpi_sensors.c.obj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../goldsrc/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../goldsrc/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/avr_main.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/avr_main.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/avr_main.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gpa_scpi.h" afterPath="$PROJECT_DIR$/gpa_scpi.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/avr_main.hex" afterPath="$PROJECT_DIR$/bin/avr_main.hex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gpa_scpi.c" afterPath="$PROJECT_DIR$/gpa_scpi.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scpi_sensors.c" afterPath="$PROJECT_DIR$/scpi_sensors.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scpi_sensors.h" afterPath="$PROJECT_DIR$/scpi_sensors.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../raspberry/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/agv.py" afterPath="$PROJECT_DIR$/../../raspberry/agv.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/agv_sensors.py" afterPath="$PROJECT_DIR$/../../raspberry/agv_sensors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/scpi_server.py" afterPath="$PROJECT_DIR$/../../raspberry/scpi_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/states/agv_state.py" afterPath="$PROJECT_DIR$/../../raspberry/states/agv_state.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../raspberry/bluetooth_server.py" afterPath="$PROJECT_DIR$/../../raspberry/bluetooth_server.py" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="700">
-              <caret line="35" column="149" lean-forward="true" selection-start-line="35" selection-start-column="149" selection-end-line="35" selection-end-column="149" />
+              <caret line="35" column="149" lean-forward="false" selection-start-line="35" selection-start-column="149" selection-end-line="35" selection-end-column="149" />
               <folding />
             </state>
           </provider>
@@ -58,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/gpa_scpi.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="732">
-              <caret line="132" column="23" lean-forward="false" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/gpa_scpi.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#94#113#0" expanded="true" />
               </folding>
@@ -79,8 +71,8 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -92,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/avg_adc.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/avg_adc.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#45#65#0" expanded="true" />
               </folding>
@@ -113,8 +105,8 @@
       <file leaf-file-name="scpi_sensors.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scpi_sensors.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="160">
+              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -123,8 +115,8 @@
       <file leaf-file-name="scpi_sensors.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scpi_sensors.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="100">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -164,12 +156,12 @@
         <option value="$PROJECT_DIR$/avg_adc.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/scpi_distance.c" />
-        <option value="$PROJECT_DIR$/gpa_scpi.c" />
         <option value="$PROJECT_DIR$/avg_adc.c" />
         <option value="$PROJECT_DIR$/blinkers.h" />
         <option value="$PROJECT_DIR$/scpi_sensors.h" />
         <option value="$PROJECT_DIR$/gpa_scpi.h" />
         <option value="$PROJECT_DIR$/scpi_sensors.c" />
+        <option value="$PROJECT_DIR$/gpa_scpi.c" />
         <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
@@ -489,21 +481,22 @@
       <workItem from="1494173144824" duration="3830000" />
       <workItem from="1494330740180" duration="483000" />
       <workItem from="1494340689187" duration="2026000" />
+      <workItem from="1494490762086" duration="8688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24997000" />
+    <option name="totallyTimeSpent" value="33685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-11" width="1855" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5385861" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.46519157" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.49595687" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18552497" sideWeight="0.5990286" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18552497" sideWeight="0.40097138" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18552497" sideWeight="0.6540745" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18552497" sideWeight="0.34592554" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -856,18 +849,8 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
-          <caret line="35" column="149" lean-forward="true" selection-start-line="35" selection-start-column="149" selection-end-line="35" selection-end-column="149" />
+          <caret line="35" column="149" lean-forward="false" selection-start-line="35" selection-start-column="149" selection-end-line="35" selection-end-column="149" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gpa_scpi.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#94#113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,16 +864,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scpi_sensors.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="100">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avg_adc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gpa_scpi.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/avg_adc.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
@@ -899,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scpi_sensors.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="160">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -908,23 +909,15 @@
     <entry file="file://$PROJECT_DIR$/gpa_scpi.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
-          <caret line="132" column="23" lean-forward="false" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/avg_adc.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

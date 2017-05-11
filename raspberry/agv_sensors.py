@@ -14,14 +14,19 @@ class AGVSensors(Thread):
 
     def __init__(self):
         super(AGVSensors, self).__init__(daemon=True)
-        self.main=ScpiClient("/dev/ttyS0")
+        self.main=ScpiClient("/dev/ttyAMA0")
         idn = self.main.idn()
         print("[SENSORS] Found sensors! (%s)" % idn)
         self.start()
         self.realline = [False for x in range(0, 8)]
+        self.actual = [False for x in range(0, 8)]
+
         self.dist = [0.0, 0.0, 0.0]
         self.lock = Lock()
         self.battery = 0
+
+    def get_linewidth(self):
+        return 8 - self.get_lline() - self.get_rline()
 
     def get_distance(self):
         with self.lock:
@@ -46,17 +51,19 @@ class AGVSensors(Thread):
     def get_battery (self):
         return self.battery
 
+    def get_actual_line(self):
+        return self.actual
+
     def run(self):
         print("[SENSORS] Started...")
         while True:
             line, dist, bat = self.main[b"SENS:LINE?;DIST?;BAT?"]
             try:
                 self.battery = float(bat)
-                if self.battery < 21.0:
-                    print("WARNING! CRITICALLY LOW BATTERY VOLTAGE ( %fV ), STOPPING!")
-                    _thread.interrupt_main()
+
                 self.dist = [float(s) for s in dist.split()]
                 line = [int(s) > 3000 for s in line.split()]
+                self.actual = [line[3], line[0], line[1], line[2], line[4], line[6], line[7], line[5]]
                 if any(line):
                     self.realline = [line[3], line[0], line[1], line[2], line[4], line[6], line[7], line[5]]
                 #print(self.realline)

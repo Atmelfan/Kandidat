@@ -45,27 +45,30 @@ class BluetoothServer(Thread):
         return tmp
 
     def run(self):
-        print("[BLUETOOTH] Waiting for client...")
-        client_sock, client_info = self.socket.accept()
-        print("[BLUETOOTH] Accepted connection from ", client_info)
-        try:
-            while True:
-                data = get_string(client_sock)
-                if len(data) == 0:
-                    break
+        while True:
+            print("[BLUETOOTH] Waiting for client...")
+            client_sock, client_info = self.socket.accept()
+            print("[BLUETOOTH] Accepted connection from ", client_info)
+            try:
+                while True:
+                    print("-----")
+                    data = get_string(client_sock)
+                    if len(data) == 0:
+                        break
 
-                print(">> %s" % data)
+                    print(">> %s" % data)
 
-                s = data.decode()
-                returns = self.scpi_server.execute(s)
-                print("<< %s" % returns.encode())
+                    s = data.decode()
+                    returns = self.scpi_server.execute(s)
+                    print("<< %s" % returns.encode())
 
-                client_sock.send(returns.encode())
-        except Exception as e:
-            print("[BLUETOOTH %s] Unexpected error: %s" % (self.getName(), e))
-        finally:
-            client_sock.close()
-            self.socket.close()
+                    client_sock.send(returns.encode())
+            except Exception as e:
+                print("[BLUETOOTH %s] Unexpected error: %s" % (self.getName(), e))
+            finally:
+                client_sock.close()
+            self.scpi_server.execute("NAV:STOP")
+            print("[BLUETOOTH] Disconnected.")
 
 
     def send_line(self, s):

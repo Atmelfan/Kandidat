@@ -19,10 +19,10 @@ datastore = {
     "start": False
 }
 state = AGVStateStop(datastore)
-P = 90
-I = 0.135
-D = 90
-BASE_SPEED = 1500
+P = 150
+I = 0.1
+D = 0
+BASE_SPEED = 1300
 BASE_DISTANCE = 10.0
 
 class AGVRole:
@@ -60,7 +60,7 @@ def set_p(args):
         P = int(args[0])
     except ValueError:
         return "ERR: Not a number!"
-    return "%s" % P
+    return "P=%s" % P
 
 
 # SYStem:I
@@ -72,7 +72,7 @@ def set_i(args):
         I = float(args[0])
     except ValueError:
         return "ERR: Not a number!"
-    return "%s" % I
+    return "I=%s" % I
 
 
 # SYStem:D
@@ -84,16 +84,13 @@ def set_d(args):
         D = float(args[0])
     except ValueError:
         return "ERR: Not a number!"
-    return "%s" % D
+    return "D=%s" % D
 
 
 # NAVigate:STOp
 def set_stop(args):
     global state
     state = AGVStateStop(datastore)
-    if len(args) == 1 && args[0] == 'hammertime':
-        return "STOPPED! HAMMER TIME!"
-
     return "STOPPED!"
 
 
@@ -223,9 +220,13 @@ if __name__ == '__main__':
     state.start() # initialize start state
     try:
         while True:
+            if sensors.battery < 21.0:
+                print("WARNING! CRITICALLY LOW BATTERY VOLTAGE ( %fV ), STOPPING!")
+                state = AGVStateFault("LOW BATTERY")
             #print("%s %d || %s %d" % (sensors.get_line(), sensors.get_rline(), sensors.get_line()[::-1], sensors.get_lline()))
             #try:
-            next_state = state.update(cameras.get_tags(), sensors.get_lastline())
+            tags = cameras.get_tags()
+            next_state = state.update(tags, sensors)
             if next_state:
                 print("Switching state from [%s] to [%s]!" % (state.get_name(), next_state.get_name()))
                 state.stop()#clean stop of last state
@@ -261,7 +262,9 @@ if __name__ == '__main__':
 
 
             i = sensors.get_rline() if mode == LineMode.KEEP_RIGHT else sensors.get_lline()
-            if mode == LineMode.KEEP_STRAIGHT:
+            if mode == LineMode.OVERRIDE:
+                state.override(tags, sensors, motors)
+            elif mode == LineMode.KEEP_STRAIGHT:
                 motors.send(("ch1:dir %s; vel %d\n\r" % ("BACK", 500)).encode(), 0)
                 motors.send(("ch2:dir %s; vel %d\n\r" % ("BACK", 500)).encode(), 0)
             elif i == -1 or mode == LineMode.DISABLE:
