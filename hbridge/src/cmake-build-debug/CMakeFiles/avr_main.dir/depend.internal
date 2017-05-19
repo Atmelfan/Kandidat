@@ -4,6 +4,8 @@
 CMakeFiles/avr_main.dir/avg_adc.c.obj
  /media/data/kandidat/Kandidat/hbridge/src/avg_adc.c
  /media/data/kandidat/Kandidat/hbridge/src/avg_adc.h
+CMakeFiles/avr_main.dir/blinkers.c.obj
+ /media/data/kandidat/Kandidat/hbridge/src/blinkers.c
 CMakeFiles/avr_main.dir/gpa_scpi.c.obj
  /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c
  /media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.h

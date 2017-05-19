@@ -97,7 +97,10 @@ void scpi_execute_F(const char *command, struct scpi_command* commands, int N) {
 
     }
     //No commands matched.
-    scpi_println("[SCPI] Command does not exist!");
+    scpi_println("[SCPI] Command ");
+    scpi_print(command);
+    scpi_println(" does not exist!");
+
 }
 
 void scpi_execute(const char* command){

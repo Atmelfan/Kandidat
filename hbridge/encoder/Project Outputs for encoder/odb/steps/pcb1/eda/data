@@ -1,4 +1,4 @@
-# 2017-03-30 18:07:22
+# 2017-05-05 10:25:34
 #
 HDR Altium Designer file - Version 1.0.0.30000
 LYR top_solder top bottom bottom_solder drill keep-out_layer 
@@ -52,9 +52,9 @@ FID H 4 5
 #NET 2
 NET NetC1_2
 SNT PLN S C 0.00
-FID C 1 133
+FID C 1 135
 SNT PLN S C 0.00
-FID C 1 132
+FID C 1 134
 SNT TOP T 2 2
 FID C 0 9
 FID C 1 117
@@ -111,9 +111,9 @@ FID C 1 33
 #NET 3
 NET NetC2_2
 SNT PLN S C 0.00
-FID C 1 135
+FID C 1 133
 SNT PLN S C 0.00
-FID C 1 134
+FID C 1 132
 SNT TOP T 2 1
 FID C 0 14
 FID C 1 122

@@ -153,12 +153,37 @@ CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides: CMakeFiles/avr_main.dir/scp
 CMakeFiles/avr_main.dir/scpi_sensors.c.obj.provides.build: CMakeFiles/avr_main.dir/scpi_sensors.c.obj
 
 
+CMakeFiles/avr_main.dir/blinkers.c.obj: CMakeFiles/avr_main.dir/flags.make
+CMakeFiles/avr_main.dir/blinkers.c.obj: ../blinkers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/avr_main.dir/blinkers.c.obj"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/avr_main.dir/blinkers.c.obj   -c /media/data/kandidat/Kandidat/hbridge/src/blinkers.c
+
+CMakeFiles/avr_main.dir/blinkers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/avr_main.dir/blinkers.c.i"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/data/kandidat/Kandidat/hbridge/src/blinkers.c > CMakeFiles/avr_main.dir/blinkers.c.i
+
+CMakeFiles/avr_main.dir/blinkers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/avr_main.dir/blinkers.c.s"
+	avr-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/data/kandidat/Kandidat/hbridge/src/blinkers.c -o CMakeFiles/avr_main.dir/blinkers.c.s
+
+CMakeFiles/avr_main.dir/blinkers.c.obj.requires:
+
+.PHONY : CMakeFiles/avr_main.dir/blinkers.c.obj.requires
+
+CMakeFiles/avr_main.dir/blinkers.c.obj.provides: CMakeFiles/avr_main.dir/blinkers.c.obj.requires
+	$(MAKE) -f CMakeFiles/avr_main.dir/build.make CMakeFiles/avr_main.dir/blinkers.c.obj.provides.build
+.PHONY : CMakeFiles/avr_main.dir/blinkers.c.obj.provides
+
+CMakeFiles/avr_main.dir/blinkers.c.obj.provides.build: CMakeFiles/avr_main.dir/blinkers.c.obj
+
+
 # Object files for target avr_main
 avr_main_OBJECTS = \
 "CMakeFiles/avr_main.dir/main.c.obj" \
 "CMakeFiles/avr_main.dir/gpa_scpi.c.obj" \
 "CMakeFiles/avr_main.dir/avg_adc.c.obj" \
-"CMakeFiles/avr_main.dir/scpi_sensors.c.obj"
+"CMakeFiles/avr_main.dir/scpi_sensors.c.obj" \
+"CMakeFiles/avr_main.dir/blinkers.c.obj"
 
 # External object files for target avr_main
 avr_main_EXTERNAL_OBJECTS =
@@ -167,9 +192,10 @@ avr_main_EXTERNAL_OBJECTS =
 ../bin/avr_main: CMakeFiles/avr_main.dir/gpa_scpi.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/avg_adc.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/scpi_sensors.c.obj
+../bin/avr_main: CMakeFiles/avr_main.dir/blinkers.c.obj
 ../bin/avr_main: CMakeFiles/avr_main.dir/build.make
 ../bin/avr_main: CMakeFiles/avr_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ../bin/avr_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ../bin/avr_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/avr_main.dir/link.txt --verbose=$(VERBOSE)
 	avr-objcopy -O ihex -R.eeprom /media/data/kandidat/Kandidat/hbridge/src/bin/avr_main /media/data/kandidat/Kandidat/hbridge/src/bin/avr_main.hex
 	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 /media/data/kandidat/Kandidat/hbridge/src/bin/avr_main /media/data/kandidat/Kandidat/hbridge/src/bin/avr_main.eep
@@ -184,6 +210,7 @@ CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/main.c.obj.requires
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/gpa_scpi.c.obj.requires
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/avg_adc.c.obj.requires
 CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/scpi_sensors.c.obj.requires
+CMakeFiles/avr_main.dir/requires: CMakeFiles/avr_main.dir/blinkers.c.obj.requires
 
 .PHONY : CMakeFiles/avr_main.dir/requires
 

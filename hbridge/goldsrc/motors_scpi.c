@@ -31,6 +31,8 @@ const char* scpi_motor_setduty1(const char* s){
     if(d > MOTORS_PERIOD){
         //scpi_print("INVALID VALUE!");
         return scpi_nop(s);
+    }else{
+        scpi_print("");
     }
     motors_set_duty(0, MOTORS_PERIOD - d);
     return scpi_nop(s);
@@ -40,8 +42,10 @@ const char* scpi_motor_setduty2(const char* s){
     //scpi_print("B");
     uint16_t d = (uint16_t)strtoul(s, NULL, 10);
     if(d > MOTORS_PERIOD){
-        //scpi_print("INVALID VALUE!");
+        scpi_print("INVALID VALUE!");
         return scpi_nop(s);
+    }else{
+        scpi_print("");
     }
     motors_set_duty(1, MOTORS_PERIOD - d);
     return scpi_nop(s);
@@ -50,14 +54,14 @@ const char* scpi_motor_setduty2(const char* s){
 const char *scpi_motor_setdir1(const char *s) {
     const char* tmp = next_arg2(s);
     if(strstr(tmp, "FORW") == tmp){
-        //scpi_print("GOING FORWARD!");
+        scpi_print("GOING FORWARD!");
         motors_set_dir(0, 1);
     }else if(strstr(tmp, "BACK") == tmp){
-        //scpi_print("GOING BACKWARD!");
+        scpi_print("GOING BACKWARD!");
         motors_set_dir(0, 0);
 
     }else{
-        //scpi_print("INVALID DIRECTION!");
+        scpi_print("INVALID DIRECTION!");
     }
     return scpi_nop(s);
 }
@@ -65,13 +69,13 @@ const char *scpi_motor_setdir1(const char *s) {
 const char *scpi_motor_setdir2(const char *s) {
     const char* tmp = next_arg2(s);
     if(strstr(tmp, "FORW") == tmp){
-        //scpi_print("GOING FORWARD!");
+        scpi_print("GOING FORWARD!");
         motors_set_dir(1, 1);
     }else if(strstr(tmp, "BACK") == tmp){
-        //scpi_print("GOING BACKWARD!");
+        scpi_print("GOING BACKWARD!");
         motors_set_dir(1, 0);
     }else{
-        //scpi_print("INVALID DIRECTION!");
+        scpi_print("INVALID DIRECTION!");
     }
     return scpi_nop(s);
 }

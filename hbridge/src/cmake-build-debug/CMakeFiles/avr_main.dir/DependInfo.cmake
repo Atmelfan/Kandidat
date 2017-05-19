@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/media/data/kandidat/Kandidat/hbridge/src/avg_adc.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/avg_adc.c.obj"
+  "/media/data/kandidat/Kandidat/hbridge/src/blinkers.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/blinkers.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/gpa_scpi.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/gpa_scpi.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/main.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/main.c.obj"
   "/media/data/kandidat/Kandidat/hbridge/src/scpi_sensors.c" "/media/data/kandidat/Kandidat/hbridge/src/cmake-build-debug/CMakeFiles/avr_main.dir/scpi_sensors.c.obj"

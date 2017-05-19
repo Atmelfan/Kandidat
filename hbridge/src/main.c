@@ -46,15 +46,56 @@ void usart_init(){
     PORTF.DIRSET = (1 << 3);
 }
 
+
+void twi_init(){
+    /*Set TWI baud rate*/
+    TWIC_MASTER_BAUD = 0xFF;
+    /*SET WIEN, ENABLE and INTLVL bits high.*/
+    TWIC_MASTER_CTRLA |= 0xD8;
+    /*Force TWI bus idle mode.*/
+    TWIC_MASTER_STATUS |= 0x01;
+}
+
+#define DISP_ADDR 0x7C
+
+#define TWI_READ 0x01
+#define TWI_WRITE 0x00
+
+
+void twi_start(uint8_t addr){
+    TWIC_MASTER_ADDR = addr;
+
+    /*WAIT FOR THE WRITE INTERUPT FLAG TO SET HIGH*/
+    while(!(TWIC_MASTER_STATUS & 64));
+
+
+}
+
+void twi_send(uint8_t data){
+    TWIC_MASTER_DATA = data;
+    while(!(TWIC_MASTER_STATUS & 64));
+}
+
+void twi_stop(){
+    /* MASTER SENDS ACK AND ISSUES A STOP */
+    TWIC_MASTER_CTRLC = 0x03;
+}
+
 void setup(){
     PMIC.CTRL = PMIC_LOLVLEN_bm|PMIC_MEDLVLEN_bm|PMIC_HILVLEN_bm;
     sei();
     usart_init();
     //usart_send("Hello world!\r\n");
     adc_init();
+    PORTA.DIRSET = 0x01;
+    PORTA.OUTSET = 0x01;
+    _delay_ms(100);
+    PORTA.OUTCLR = 0x01;
+
+
 }
 volatile uint8_t do_process = 0;
-volatile static char buf[64];
+volatile static char buf[128];
 
 
 void update(){
@@ -62,9 +103,9 @@ void update(){
     if(do_process){
         scpi_execute((char*)buf);
         do_process = 0;
-
+        PORTA.OUTTGL = 0x01;
     }
-    //_delay_ms(100);
+
 }
 
 
@@ -84,6 +125,8 @@ ISR(USARTF0_RXC_vect){
     static uint8_t indx = 0;
     static uint8_t mindx = 0;
     char tmp = SCPI_USART.DATA;
+    if(do_process)
+        return;
     buf[indx] = tmp;
 /*    if(tmp == '\b' && indx > 0){
         indx --;
@@ -94,7 +137,8 @@ ISR(USARTF0_RXC_vect){
     if(tmp == '\n'){
         buf[indx] = '\0';
         do_process = 1;
-        indx = mindx = 0;
+        indx = 0;
+        mindx = 0;
     }else{
         indx++;
         mindx++;

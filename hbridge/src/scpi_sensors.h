@@ -7,6 +7,8 @@
 
 const char* scpi_distance_get0(const char* command);
 const char* scpi_line_get(const char *command);
+const char *scpi_battery_get(const char *command);
+
 
 #endif //AVR_MAIN_SCPI_DISTANCE_H
 

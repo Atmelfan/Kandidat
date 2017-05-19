@@ -50,11 +50,12 @@ const char* scpi_clear(const char* command);
 
 
 static struct scpi_command scpi_commands[] = {
-    {.name = "SENSor", SCPI_DIR, .num_subcommands = 3,
+    {.name = "SENSor", SCPI_DIR, .num_subcommands = 4,
         .subcommands = (scpi_command*) &(scpi_command[]) {
                 {.name="DISTance", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_distance_get0, .subcommands = NULL},
                 {.name="LINe", .scpi_handler=scpi_query_nyi, .scpi_query=scpi_line_get, .subcommands = NULL},
-                {.name="VOLTage", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL}
+                {.name="VOLTage", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_query_nyi, .subcommands = NULL},
+                {.name="BATtery", .scpi_handler=scpi_handler_nyi, .scpi_query=scpi_battery_get, .subcommands = NULL}
         }
     },
     /**

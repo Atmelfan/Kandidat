@@ -10,18 +10,19 @@ import math
 aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
 parameters = aruco.DetectorParameters_create()
 
-ARUCO_TAG_HEIGHT = 25
-ARUCO_TAG_WIDTH = 25
+ARUCO_TAG_HEIGHT = 20
+ARUCO_TAG_WIDTH = 20
 
 # Focal length = (Pixels x Distance) / Size
-WEBCAM_FOCAL_LENGTH = 1
-RASPICAM_FOCAL_LENGTH = 1
-POTATO_FOCAL_LENGTH = 1
+WEBCAM_FOCAL_LENGTH = 1260.0
+RASPICAM_FOCAL_LENGTH = 680.0
+POTATO_FOCAL_LENGTH = 1260.0
 
 
 #
 #
 def get_distance(height, fl):
+    print("%s %s %s" % (ARUCO_TAG_HEIGHT, fl, height))
     return (ARUCO_TAG_HEIGHT * fl) / height
 
 
@@ -105,7 +106,7 @@ if __name__ == '__main__':
                         cv2.imwrite('t.jpg', cvimage)
 
                         a = True
-                    print("dt=%s, at = %f, pt = %f, %s" % (t1 - t, tot/n, t1 - s, aruco_tags))
+                    print("dt=%s, at = %f, pt = %f, %s" % (t1 - t, tot/n, t1 - s, ["%02x " % tag[0] for tag in aruco_tags]))
                     t = t1
                     n = n+1
 
@@ -124,7 +125,7 @@ if __name__ == '__main__':
             while True:
                 ret, frame = cap.read()
                 aruco_tags = detect_and_cal_tags(frame, WEBCAM_FOCAL_LENGTH)
-                print(aruco_tags)
+                print(["%02x " % tag[0] for tag in aruco_tags])
         except KeyboardInterrupt:
             pass
         finally:
